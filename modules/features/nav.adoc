@@ -1,0 +1,5 @@
+* xref:index.adoc[]
+** xref:catalog.adoc[]
+** xref:gpt.adoc[]
+** xref:docs.adoc[]
+** xref:plugins.adoc[]

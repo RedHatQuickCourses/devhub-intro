@@ -1,6 +1,6 @@
 site:
-  title: Placeholder Course Title
-  start_page: placeholder-course-name::index.adoc
+  title: Introduction to Red Hat Developer Hub
+  start_page: devhub-intro::index.adoc
 
 content:
   sources:
