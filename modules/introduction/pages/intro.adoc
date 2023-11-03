@@ -1,3 +1,81 @@
 = Introduction
 
-This is _Section 1_ of _Chapter 1_ in the *hello* quick course....
+Enterprises and startups undertaking digital transformation projects are constantly being challenged to reduce the _Time to Market_ and deliver _Business Value_ quickly.
+
+While technologies, processes and tools like Agile, DevOps, cloud computing and cloud-native development have contributed significantly towards these goals, the modern application developer is still faced with the daunting task of learning and working with a plethora of development tools and infrastructure services to develop, test, deploy and troubleshoot applications.
+
+Over the last decade, the concept of _Developer Experience_ has gained traction in the industry. There are a few things an organization can do to improve the developer experience by letting them focus on just writing code as much as possible to solve business problems:
+
+* Reduce the cognitive overload on developers by abstracting away infrastructure and operational concerns 
+* Provide more self-service capabilities to kick off projects quickly without manually assembling all the components
+* Improve discovery of tools, APIs, libraries and documentation and promote reuse
+* Provide a "single pane of glass" dashboard that provides real-time visualization and details about projects, workflows, CI/CD pipelines, and their deployment status
+* Reduce reliance on operations teams for repetitive day to day tasks ("ticketing hell"), and automate workflows as much as possible
+
+Building all these features internally, in an ad-hoc basis, takes a lot of time and effort. This is the rationale behind the concept of an **Internal Developer Platform**.
+
+== Internal Developer Platforms (IDP)
+
+Red Hat Developer Hub is an **Internal Developer Platform**.
+
+[quote,The IDP community, https://internaldeveloperplatform.org/what-is-an-internal-developer-platform]
+____
+An Internal Developer Platform (IDP) is built by a platform team to build golden paths and enable developer self-service. An IDP consists of many different technologies and tools, glued together in a way that lowers cognitive load on developers without abstracting away context and underlying technologies. Following best practices, platform teams treat their platform as a product and build it based on user research, maintain and continuously improve it.
+____
+
+A dedicated **platform team**, specializing in infrastructure and operations, creates and maintains the IDP. Platform teams focus on standardization, infrastructure abstraction, workflow automation and configure the IDP to automate recurring or repetitive tasks, such as provisioning resources or development/testing environments for developers. 
+
+From the developer point of view, IDPs integrate into existing software development lifecycles (SDLC) workflows in an organization, which usually revolves around a distributed version control system like Git, and the IDP further augments it with automation. The developer has minimal to zero reliance on operations teams for rolling out software to production. They can request resources, spin up fully provisioned environments, deploy, rollback, and troubleshoot applications independently.
+
+== Platform Engineering
+
+The terms **Platform Engineering** and **Internal Developer Platform** are sometimes used interchangeably in the industry. For the purposes of this introductory course, you can consider them the same. Strictly speaking, IDPs are a major component of platform engineering, but platform engineering encompasses many more practices and tools. 
+
+The page at https://platformengineering.org/blog/what-is-platform-engineering created by the platform engineering community explains the details.
+
+== Why do you need an Internal Developer Platform (IDP)?
+
+The page at https://internaldeveloperplatform.org/why-build-an-internal-developer-platform provides a detailed explanation for why you need an IDP.
+
+Additionally, below is a short 6 minute introduction to Backstage and the rationale for building an Internal Developer Platform (IDP).
+
+video::n1IrNe5MmZg[youtube,title=Backstage.io - An Open Source Portal for Taming Developer Chaos,width=640,height=480]
+
+== Backstage, Project Janus and Red Hat Developer Hub
+
+image::backstage-janus-rhdh-flow.png[width=800px]
+
+=== Backstage
+
+**Backstage** is an open-source platform for building developer portals created by Spotify and donated to the Cloud Native Computing Foundation (CNCF). Rather than a product that is ready to use by developers, Backstage provides the core features for building developer portals, and has an extensive list of plugins supporting integration with platforms, runtimes and external APIs. Platform engineering teams take the base Backstage platform, and then extend and customize it for their developers' needs. Refer to the Backtage website for a full list of plugins.
+
+=== Project Janus
+
+**Project Janus** is a Red Hat-sponsored open source community for building IDPs and plugins using Backstage.
+It is the “mid-stream” for the Red Hat Developer Hub product, sitting between Backstage upstream and the supported Red Hat product offering which is focused on four areas:
+
+* Installation on OpenShift Container Platform
+* Developing and enhancing plugins, specifically targeting other Red Hat products like Red Hat OpenShift Pipelines, Red Hat OpenShift GitOps, Red Hat Single Sign-On (RHSSO) and many more
+* Providing "golden path" template examples and software templates
+* Improving the upstream Backstage platform
+
+Below is an hour long demonstration video and discussion about Janus IDP.
+
+video::Ck7r5DpEwj0[youtube,title=GitOps Guide to the Galaxy | Episode 60 - What's Janus IDP?,width=640,height=480]
+
+=== Red Hat Developer Hub
+
+**Red Hat Developer Hub** is the enterprise product that Red Hat builds and supports in production. It is based on the Janus project, and provides an integrated developer platform for customers. Several important plugins that integrate with other Red Hat Enterprise products are bundled in the product. The product is built for deployment on OpenShift Container Platform, and Red Hat builds, integrates and tests all the container images on Red Hat Enterprise Linux (RHEL) Universal Base Images (UBI). These UBI based container images are built for improved security and stability, and are constantly tested and updated to address security vulnerabilities.
+
+image::rhdh-big-picture.png[width=800px]
+
+== References
+
+* https://developers.redhat.com/rhdh[Red Hat Developer Hub^]
+* https://internaldeveloperplatform.org/what-is-an-internal-developer-platform[What is an Internal Developer Platform (IDP)?^]
+* https://internaldeveloperplatform.org/why-build-an-internal-developer-platform[Why build and use an Internal Developer Platform^]
+* https://backstage.io[Backstage Open Source IDP^]
+* https://janus-idp.io[Project Janus^]
+* https://platformengineering.org/blog/what-is-platform-engineering[What is Platform Engineering^]
+* https://medium.com/@rphilogene/how-to-build-an-internal-developer-platform-everything-you-need-to-know-91b244079e92[How to Build an Internal Developer Platform: Everything You Need to Know^]
+* https://medium.com/@rphilogene/internal-developer-platform-vs-internal-developer-portal-whats-the-difference-b7ce6351f195[Internal Developer Platform vs Internal Developer Portal: What’s The Difference?^]

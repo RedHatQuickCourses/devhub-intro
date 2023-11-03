@@ -1,8 +1,8 @@
 = Introduction to Red Hat Developer Hub
 :navtitle: Home
 
-Welcome to this quick course on the _Introduction to Red{nbsp}Hat Developer Hub (RHDH)_.
-This course is the first in a series of 3 courses about Red{nbsp}Hat Developer Hub:
+Welcome to this quick course on the _Introduction to Red{nbsp}Hat Developer Hub_.
+This course is the first in a series of 3 courses about **Red{nbsp}Hat Developer Hub (RHDH)**:
 
 *TODO*: Provide link to the other courses when they are ready.
 

@@ -1,3 +1,9 @@
 = Introduction to Red Hat Developer Hub
 
-This is the home page of _Chapter_ 1 in the *hello* quick course...
+This chapter introduces the concept of an **Internal Developer Platform (IDP)** and the features of Red Hat Developer Hub.
+You will also learn about the architecture and components of the product.
+
+== Goals
+
+* Identify the main features of Red Hat Developer Hub
+* Describe the architecture and components of Red Hat Developer Hub

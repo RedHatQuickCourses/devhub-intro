@@ -1,3 +1,3 @@
 = Golden Path Templates
 
-This is _Section 2_ of _Chapter 3_ in the *hello* quick course....
+NOTE: >>>> THIS SECTION IS UNDER DEVELOPMENT <<<<
