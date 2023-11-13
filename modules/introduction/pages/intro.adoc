@@ -69,6 +69,12 @@ video::Ck7r5DpEwj0[youtube,title=GitOps Guide to the Galaxy | Episode 60 - What'
 
 image::rhdh-big-picture.png[width=800px]
 
+== Demonstration: The Parts of RHDH
+
+Watch this short 5 minute demonstration about the parts of RHDH that are provided by default in every instance of RHDH.
+
+video::rhdh-parts.mp4[width=800,height=480]
+
 == References
 
 * https://developers.redhat.com/rhdh[Red Hat Developer Hub^]

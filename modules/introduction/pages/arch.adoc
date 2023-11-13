@@ -31,7 +31,6 @@ The app is an instance of RHDH that is deployed on OpenShift and customized to t
 +
 The App is configured using YAML files that are customized for an organization.
 
-
 == References
 
 * https://backstage.io/docs/overview/architecture-overview[Backstage Architecture^]
