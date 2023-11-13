@@ -1,3 +1,59 @@
 = Software Catalog
 
-This is _Section 1_ of _Chapter 2_ in the *hello* quick course....
+The **Software Catalog** as its name implies, is a __catalog__ of software components. It is designed to replace ad-hoc, informal systems that do not scale to handle the sprawl of modern cloud-native application ecosystems.
+
+== Why do you need a Software Catalog?
+
+While popular practices like splitting applications into microservices and reusable APIs, software ownership by smaller teams of developers (__two pizza teams__) has improved the efficiency of organizations, it has made it difficult to **discover** and **reuse** software components at scale (imagine a large organization with hundreds of developers maintaining hundreds or thousands of services).
+
+Maintaining a centralized catalog manually using spreadsheets, wikis, and internal or Sharepoint portals is not going to scale.
+
+The RHDH Software Catalog is designed to address this need. It keeps track of all software components in your organization - this includes APIs, software libraries, data models, pipelines, and more. Essentially, anything that can be shared and reused outside the team that created the component. It improves **discoverability** by exposing the catalog as an API that can then be consumed by anyone within the organization. The catalog can also be consumed by RHDH plugins that can then extend the functionality of the IDP by incorporating it into custom workflows and help with automating many operational tasks.
+
+Maintaining a software catalog massively simplifies the **Onboarding Process** for a new developer(s) joining the organization, or a new project. The catalog lets you discover components in the catalog, as well as explore the APIs, issues, CI/CD pipeline status, and technical documentation in a single easily accessible place. The component information is kept up to date by the respective teams (in their corresponding Git repositories), and RHDH periodically pulls the latest metadata to maintain the information in near realtime.
+
+RHDH comes with a set of pre-built plugins that interact with the components in the catalog. For example, CI/CD pipelines, container images, issue tracking, Kubernetes cluster information and the deployments can all be viewed in RHDH without requiring developers to access these different tools using different applications, each with their own authentication and workflows. 
+
+NOTE: These plugins are not meant to replace the tooling, but to **complement** it, by reducing the __cognitive overload__ and preventing __context switching__ between different tools while letting the developer focus on building, deploying, releasing and maintaining software. The plugins can be configured to display limited, but **useful** information at a first glance. Links can be embedded in the plugin to navigate to the external tool or application in case the developer needs to investigate deeper. 
+
+image::rhdh-sw-catalog.png[title=Software Catalog in RHDH,width=800px]
+
+== Populating the Software Catalog
+
+The configuration of the catalog is done using YAML files, typically stored in source control systems like Git. These YAML files live alongside, and in the same source code repository as the source code of the software components. There are three ways to add components to the Software Catalog:
+
+=== Manual Component Registration
+
+To register an already existing component that is created outside RHDH, click on **Create** in the left sidebar navigation of RHDH, and then click **REGISTER NEW COMPONENT**.
+
+In addition to manually registering components, you can also register components through static configuration, by passing RHDH a YAML configuration file with the location and details about the component.
+
+image::rhdh-new-component.png[title=Manual Registration of Components,width=800px]
+
+=== Create Components from Golden Path Templates (GPT)
+
+A more flexible approach is to create components using RHDH **Golden Path Templates** (aka **Software Templates** in Backstage parlance), which automatically adds the components to the catalog. Using this approach, you can register multiple related components of an application at the same time with the Software Catalog.
+
+image::rhdh-new-gpt.png[title=Create Components using Golden Path Templates,width=800px]
+
+NOTE: Golden Path Templates (GPT) are covered in more detail in the next section.
+
+=== Third-party Integration
+
+RHDH can import software components from third-party external systems using its Typescript API. This would require you to extend the Typescript API of RHDH and is outside the scope of this course.
+
+The first two methods are the most common way to populate the catalog, with the third option being reserved for special scenarios where you already have an existing system that manages software components, and you want to integrate it with RHDH.
+
+== Viewing the Software Catalog
+
+By default the software catalog shows components owned by the team of the logged in user. But you can also switch the search filters see all the components in your organization's software catalog. The RHDH web UI provides powerful full text search and filtering capability to search through thousands of components.
+
+image::rhdh-search-filter.png[title=Searching and Filtering the Software Catalog,width=800px]
+
+For easy and quick access to components you visit frequently, RHDH supports **starring** (tag as favorite) of components.
+
+image::rhdh-starred.png[title=Starred Entities,width=800px]
+
+== References
+
+* https://backstage.io/docs/features/software-catalog[Backstage Software Catalog^]

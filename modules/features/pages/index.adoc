@@ -1,3 +1,15 @@
 = Core Features of Red Hat Developer Hub
 
-This is the home page of _Chapter 2_ in the *hello* quick course....
+image::rhdh-core-features.png[width=800px]
+
+This chapter provides a basic introduction to the default features that comes with Red Hat Developer Hub. You will learn about the following features:
+
+* Software Catalog
+* Golden Path Templates (Software Templates)
+* TechDocs
+* Search
+* Plugins
+
+== Goals
+
+* Explore the core features of Red Hat Developer Hub that is available by default.

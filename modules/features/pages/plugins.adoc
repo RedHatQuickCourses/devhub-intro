@@ -1,3 +1,119 @@
 = Plugins
 
-This is _Section 2_ of _Chapter 3_ in the *hello* quick course....
+**Plugins** are Modular extensions that enhance the functionality and capabilities of the platform.
+They were designed to add specific features, integrations, or customizations on top of the base RHDH platform.
+
+Plugins can provide new pages in the developer portal, new components, new APIs, new services, or even complete workflows within RHDH.
+Plugins can be of three different types:
+
+Frontend Plugins:: A static front end user interface that is written in React + Typescript that integrates with internal or external APIs to render data in the IDP
+Backend Plugins:: A backend API that is written in Typescript that exposes an API to frontend plugins
+Frontend + Backend plugins:: A mix of frontend and backend Typescript code that provides a certain feature of functionality
+
+Red Hat Developer Hub (RHDH) has a very flexible and extensive set of plugins that provide most of the functionality in the product.
+The core features like Software Catalog, Templates, TechDocs and Search are themselves built as plugins in RHDH.
+
+There are hundreds of plugins created by the Backstage community that you can use to customize your instance of RHDH, and adapt the IDP to your needs.
+
+image::rhdh-plugins.png[title=RHDH Plugins,width=800px]
+
+== Red Hat Supported Plugins
+
+Red Hat actively participates in the thriving Backstage community by developing and supporting a number of useful plugins that are pre-integrated into RHDH by default.
+Some of the most important ones are listed below. There are plans to develop more plugins that integrate with the Red Hat product ecosystem.
+
+=== Tekton Plugin
+
+The Tekton plugin enables you to visualize the results of CI/CD pipeline runs on your Kubernetes or OpenShift clusters.
+The plugin allows users to visually see high level status of all associated tasks in the pipeline for their applications.
+
+image::rhdh-tekton-plugin.png[title=RHDH Tekton Plugin,width=800px]
+
+This plugin is similar to the pipeline view in the **Developer Perspective** of the OpenShift Console, and will continue to be enhanced with more features.
+For advanced debugging, it links directly to the OpenShift Pipelines console of OpenShift.
+
+image::rhdh-tekton-viz.png[title=RHDH Tekton Pipeline Visualization,width=800px]
+
+=== ArgoCD Plugin
+
+This plugin allows you to visualize the ArgoCD sync status, deployment history, and health status for your GitOps enabled applications.
+It links to the ArgoCD UI for advanced debugging and inspection
+
+image::rhdh-tekton-plugin.png[title=RHDH Tekton Plugin,width=800px]
+
+The ArgoCD plugin can show you the high-level status of a GitOps enabled application in your Catalog.
+
+image::rhdh-argocd-viz.png[title=RHDH ArgoCD Sync Status,width=800px]
+
+=== Quay.io Plugin
+
+This plugin displays information about container images of your applications in the Quay registry.
+
+image::rhdh-quay-plugin.png[title=RHDH Quay.io Plugin,width=800px]
+
+The plugin also shows any critical vulnerabilities that were discovered while scanning the container image.
+
+image::rhdh-quay-sec-scan.png[title=RHDH Quay.io Plugin Security Scanner,width=800px]
+
+=== Keycloak Plugin
+
+The Keycloak plugin allows RHDH to provide Single Sign-On (SSO) features for the developer portal. It maps the Keycloak user and group entities to corresponding users and groups (teams) in RHDH. Integrating with Keycloak enables the use of multiple authentication and providers, for example Social login (Google, Microsoft, Meta, Twitter/X and more), Active Directory Authentication and SAML 2.0 based identity providers, OAuth and OIDC compliant identity providers, and more.
+
+The Keycloak backend plugin has the following capabilities:
+
+* Synchronization of Keycloak users in a realm
+* Synchronization of Keycloak groups and their users in a realm
+
+image::rhdh-keycloak-plugin.png[title=RHDH Keycloak Plugin,width=800px]
+
+Users and Groups from the Keycloak domain are mapped to users and groups (teams) in RHDH.
+
+image::rhdh-keycloak-users.png[title=RHDH Keycloak Users and Groups,width=800px]
+
+=== Topology Plugin
+
+The Topology plugin enables you to visualize the workloads such as Deployment, Job, Daemonset, Statefulset, CronJob, and Pods for any service on your Kubernetes or OpenShift cluster.
+The plugin originated from the **Developer Perspective** in the OpenShift Console.
+
+It has the following features:
+
+* Consistent visualization of resources across Kubernetes clusters. Simplifies the process of visualizing workloads of your applications and services
+* Read only access to related services of your application
+* Visualize real time status of your workloads
+* View related resources for your applications in the RHDH Software Catalog
+* View debugging logs for your containers
+* Eliminates the stress and cognitive overload of accessing OpenShift or Kubernetes clusters directly via the Administrator console.
+* Graphical visualization of your services and workloads, and their status across clusters in real-time, with the ability to filter workloads by a specific cluster.
+
+image::rhdh-topology-plugin.png[title=RHDH Topology Plugin,width=800px]
+
+=== Open Cluster Management (OCM) Plugin
+
+The OCM plugin integrates your RHDH instance with Open Cluster Management (OCM) enabled clusters and displays real-time data from OCM.
+It makes workloads on multiple managed clusters observable to the developer.
+
+The OCM plugin has the following capabilities:
+
+* All clusters represented as **ManagedCluster** in **MultiClusterHub** are discovered and imported into the RHDH Software Catalog, such as:
+** Entity is defined as kind: Resource with spec.type set to kubernetes-cluster.
+** Links to the OpenShift Container Platform (OCP) console, OCM console, and OpenShift Cluster Manager are provided in metadata.links.
+
+* Shows real-time data from OCM on the Resource entity page, including:
+** Cluster current status (up or down)
+** Cluster nodes status (up or down)
+** Cluster details (console link, OCP, and Kubernetes version)
+** Details about available compute resources on the cluster
+
+image::rhdh-ocm-plugin.png[title=RHDH OCM Plugin,width=800px]
+
+RHDH can also display the Kubernetes or OpenShift clusters that your applications are deployed on, and their status.
+
+image::rhdh-clusters-plugin.png[title=RHDH OpenShift/Kubernetes Cluster Plugin,width=800px]
+
+== References
+
+* https://backstage.io/docs/plugins[Backstage Plugins Introduction^]
+* https://backstage.io/plugins[List of Backstage plugins^]
+* https://backstage.io/docs/plugins/create-a-plugin[Create a Backstage plugin^]
+* https://access.redhat.com/documentation/en-us/red_hat_developer_hub/0.2[List of Red Hat built plugins]
+* https://github.com/janus-idp/backstage-plugins/tree/main/plugins[Janus IDP plugins^]
