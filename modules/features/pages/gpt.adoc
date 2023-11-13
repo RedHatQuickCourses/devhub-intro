@@ -120,6 +120,12 @@ image::rhdh-new-comp-gpt-2.png[title=Step 2: Provide Container Image Details,wid
 
 image::rhdh-new-comp-gpt-3.png[title=Step 3: Provide Git repository details,width=800px]
 
+== Demonstration: RHDH Golden Path Templates
+
+Watch this short 5 minute demonstration about the GPTs in RHDH.
+
+video::gpt.mp4[width=800,height=480]
+
 == References
 
 * https://backstage.io/docs/features/software-templates[Backstage Software Templates^]

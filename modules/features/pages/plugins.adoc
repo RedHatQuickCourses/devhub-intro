@@ -110,6 +110,12 @@ RHDH can also display the Kubernetes or OpenShift clusters that your application
 
 image::rhdh-clusters-plugin.png[title=RHDH OpenShift/Kubernetes Cluster Plugin,width=800px]
 
+== Demonstration: RHDH Plugins
+
+Watch this short 5 minute demonstration about the plugins in RHDH.
+
+video::plugin.mp4[width=800,height=480]
+
 == References
 
 * https://backstage.io/docs/plugins[Backstage Plugins Introduction^]
