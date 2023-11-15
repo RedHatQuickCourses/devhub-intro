@@ -170,7 +170,7 @@ These plugins are not meant to replace the tooling, but to <strong>complement</s
 <h2 id="_populating_the_software_catalog"><a class="anchor" href="#_populating_the_software_catalog"></a>Populating the Software Catalog</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The configuration of the catalog is done using YAML files, typically stored in source control systems like Git. These YAML files live alongside, and in the same source code repository as the source code of the software components. There are three ways to add components to the Software Catalog:</p>
+<p>The configuration of the catalog is done using YAML files, typically stored in source control systems like Git. These YAML files live alongside, and in the same source code repository as the source code of the software components. There are four ways to add components to the Software Catalog:</p>
 </div>
 <div class="sect2">
 <h3 id="_manual_component_registration"><a class="anchor" href="#_manual_component_registration"></a>Manual Component Registration</h3>
@@ -212,12 +212,18 @@ Golden Path Templates (GPT) are covered in more detail in the next section.
 </div>
 </div>
 <div class="sect2">
+<h3 id="_dynamic_discovery_of_components"><a class="anchor" href="#_dynamic_discovery_of_components"></a>Dynamic Discovery of Components</h3>
+<div class="paragraph">
+<p>RHDH can dynamically discover catalog entities from YAML configuration files stored in GitHub or GitLab. RHDH will parse the YAML files and register entities automatically. This can be useful as an alternative to statically adding components to the catalog. This is useful for maintaining sets of related components in Git repositories and mass import entities into RHDH in an automated manner.</p>
+</div>
+</div>
+<div class="sect2">
 <h3 id="_third_party_integration"><a class="anchor" href="#_third_party_integration"></a>Third-party Integration</h3>
 <div class="paragraph">
 <p>RHDH can import software components from third-party external systems using its Typescript API. This would require you to extend the Typescript API of RHDH and is outside the scope of this course.</p>
 </div>
 <div class="paragraph">
-<p>The first two methods are the most common way to populate the catalog, with the third option being reserved for special scenarios where you already have an existing system that manages software components, and you want to integrate it with RHDH.</p>
+<p>The first three methods are the most common way to populate the catalog, with the third option being reserved for special scenarios where you already have an existing system that manages software components, and you want to integrate it with RHDH.</p>
 </div>
 </div>
 </div>
