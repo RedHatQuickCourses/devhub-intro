@@ -20,7 +20,7 @@ image::rhdh-sw-catalog.png[title=Software Catalog in RHDH,width=800px]
 
 == Populating the Software Catalog
 
-The configuration of the catalog is done using YAML files, typically stored in source control systems like Git. These YAML files live alongside, and in the same source code repository as the source code of the software components. There are three ways to add components to the Software Catalog:
+The configuration of the catalog is done using YAML files, typically stored in source control systems like Git. These YAML files live alongside, and in the same source code repository as the source code of the software components. There are four ways to add components to the Software Catalog:
 
 === Manual Component Registration
 
@@ -38,11 +38,15 @@ image::rhdh-new-gpt.png[title=Create Components using Golden Path Templates,widt
 
 NOTE: Golden Path Templates (GPT) are covered in more detail in the next section.
 
+=== Dynamic Discovery of Components
+
+RHDH can dynamically discover catalog entities from YAML configuration files stored in GitHub or GitLab. RHDH will parse the YAML files and register entities automatically. This can be useful as an alternative to statically adding components to the catalog. This is useful for maintaining sets of related components in Git repositories and mass import entities into RHDH in an automated manner.
+
 === Third-party Integration
 
 RHDH can import software components from third-party external systems using its Typescript API. This would require you to extend the Typescript API of RHDH and is outside the scope of this course.
 
-The first two methods are the most common way to populate the catalog, with the third option being reserved for special scenarios where you already have an existing system that manages software components, and you want to integrate it with RHDH.
+The first three methods are the most common way to populate the catalog, with the third option being reserved for special scenarios where you already have an existing system that manages software components, and you want to integrate it with RHDH.
 
 == Viewing the Software Catalog
 
