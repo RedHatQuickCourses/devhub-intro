@@ -30,16 +30,14 @@ The plugin allows users to visually see high level status of all associated task
 image::rhdh-tekton-plugin.png[title=RHDH Tekton Plugin,width=800px]
 
 This plugin is similar to the pipeline view in the **Developer Perspective** of the OpenShift Console, and will continue to be enhanced with more features.
-For advanced debugging, it links directly to the OpenShift Pipelines console of OpenShift.
 
 image::rhdh-tekton-viz.png[title=RHDH Tekton Pipeline Visualization,width=800px]
 
 === ArgoCD Plugin
 
 This plugin allows you to visualize the ArgoCD sync status, deployment history, and health status for your GitOps enabled applications.
-It links to the ArgoCD UI for advanced debugging and inspection
 
-image::rhdh-tekton-plugin.png[title=RHDH Tekton Plugin,width=800px]
+image::rhdh-argocd-plugin.png[title=RHDH ArgoCD Plugin,width=800px]
 
 The ArgoCD plugin can show you the high-level status of a GitOps enabled application in your Catalog.
 
@@ -86,6 +84,16 @@ It has the following features:
 * Graphical visualization of your services and workloads, and their status across clusters in real-time, with the ability to filter workloads by a specific cluster.
 
 image::rhdh-topology-plugin.png[title=RHDH Topology Plugin,width=800px]
+
+Each deployment in the topology plugin can be further inspected to visualize the number of pods, their status, services, routes, and other details.
+
+image::rhdh-topology-detail.png[title=RHDH Topology Plugin Pod View,width=800px]
+
+image::rhdh-topology-detail-2.png[title=RHDH Topology Plugin Resource View,width=800px]
+
+RHDH also provides a convenient link to the container logs to help developers troubleshoot application deployments with leaving RHDH.
+
+image::rhdh-topology-logs.png[title=RHDH Topology Plugin Container Logs,width=800px]
 
 === Open Cluster Management (OCM) Plugin
 
