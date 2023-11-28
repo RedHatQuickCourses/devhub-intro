@@ -1,3 +1,39 @@
 = Architecture
 
-This is _Section 2_ of _Chapter 1_ in the *hello* quick course....
+The following diagram illustrates the high-level architecture of Red Hat Developer Hub (RHDH):
+
+image::rhdh-architecture.png[title=Red Hat Developer Hub Architecture]
+
+RHDH is designed to run on the Red Hat OpenShift Container Platform v4. It is built around the core of the upstream Backstage project with a number of useful pre-integrated plugins for large organizations with many developer teams.A number of these pre-integrated plugins are written and supported by Red Hat and integrate RHDH with other Red Hat products.
+
+== Software Components
+
+From a software component point of view, RHDH consists of the following:
+
+Core::
+RHDH is designed around a very thin modular core on top of the Node.js runtime, with most of the features and functionalities provided by an extensive ecosystem of plugins. The core consists of basic functionality like configuration, logging, plugin lifecycle control, scheduled jobs, and more.
+
+Frontend::
+The front-end web UI is a React application written in TypeScript that integrates with the RHDH back-end API. The user interface, built using Material UI, is designed for extension and customization. Platform engineering teams can customize the look and feel using HTML, CSS and a little bit of TypeScript.
+
+Backend::
+The back-end is a Node.js application also written in TypeScript and the Express.js framework. It exposes the features of the IDP as a REST API that can be consumed by the front-end. Application data is stored in a PostgreSQL database running on OpenShift by default.
+
+Plugins::
+Almost all the features and functionalities in the platform are written as plugins, that extend the core of RHDH. It is expected that platform engineering teams will use a combination of freely available, Red Hat provided, as well as in-house developed custom plugins. The Backstage community maintains an extensive catalog of plugins that integrates with numerous third party APIs and products.
++
+Plugins can be purely front-end based. These plugins integrate with third party APIs external to the IDP and display customized content in the web UI.
++
+Plugins can also be a combination of front-end and back-end code that implements some functionality that is useful to the organization.
+
+App::
+The app is an instance of RHDH that is deployed on OpenShift and customized to the needs of the organization. The app ties together core functionality provided by the platform with additional plugins. The app is built and maintained by platform engineering teams to serve their customers - application developers.
++
+The App is configured using YAML files that are customized for an organization.
+
+== References
+
+* https://backstage.io/docs/overview/architecture-overview[Backstage Architecture^]
+* https://backstage.io/plugins[Backstage plugin directory^]
+* https://backstage.io/docs/FAQ#technical-faq[Backstage Technical FAQs^]
+* https://backstage.spotify.com/learn/backstage-for-all/backstage-for-all/2-concepts/[Backstage concepts and Philosophy^]
