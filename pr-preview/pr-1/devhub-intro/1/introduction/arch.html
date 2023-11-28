@@ -132,7 +132,7 @@
 <div class="title">Figure 1. Red Hat Developer Hub Architecture</div>
 </div>
 <div class="paragraph">
-<p>RHDH is designed to run on OpenShift Container Platform v4. It is built around the core of the upstream Backstage project with a number of useful pre-integrated plugins for large organizations with many developer teams.A number of these pre-integrated plugins are written and supported by Red Hat and integrate RHDH with other Red Hat products.</p>
+<p>RHDH is designed to run on the Red Hat OpenShift Container Platform v4. It is built around the core of the upstream Backstage project with a number of useful pre-integrated plugins for large organizations with many developer teams.A number of these pre-integrated plugins are written and supported by Red Hat and integrate RHDH with other Red Hat products.</p>
 </div>
 </div>
 </div>
@@ -146,19 +146,19 @@
 <dl>
 <dt class="hdlist1">Core</dt>
 <dd>
-<p>RHDH is designed around a very thin modular core on top of the Node.js runtime, with most of the features and functionality provided by an extensive ecosystem of plugins. The core consists of basic functionality like configuration, logging, plugin lifecycle control, scheduled jobs, and more.</p>
+<p>RHDH is designed around a very thin modular core on top of the Node.js runtime, with most of the features and functionalities provided by an extensive ecosystem of plugins. The core consists of basic functionality like configuration, logging, plugin lifecycle control, scheduled jobs, and more.</p>
 </dd>
 <dt class="hdlist1">Frontend</dt>
 <dd>
-<p>The front-end web UI is a React application written in Typescript that integrates with the RHDH back-end API. The user interface, built using Material UI, is designed for extension and customization. Platform engineering teams can customize the look and feel using HTML, CSS and a little bit of Typescript.</p>
+<p>The front-end web UI is a React application written in TypeScript that integrates with the RHDH back-end API. The user interface, built using Material UI, is designed for extension and customization. Platform engineering teams can customize the look and feel using HTML, CSS and a little bit of TypeScript.</p>
 </dd>
 <dt class="hdlist1">Backend</dt>
 <dd>
-<p>The back-end is a Node.js application also written in Typescript and the Express framework. It exposes the features of the IDP as a REST API that can be consumed by the front-end. Application data is stored in a PostgreSQL database running on OpenShift by default.</p>
+<p>The back-end is a Node.js application also written in TypeScript and the Express.js framework. It exposes the features of the IDP as a REST API that can be consumed by the front-end. Application data is stored in a PostgreSQL database running on OpenShift by default.</p>
 </dd>
 <dt class="hdlist1">Plugins</dt>
 <dd>
-<p>Almost all the features and functionality in the platform is written as plugins, that extend the core of RHDH. It is expected that platform engineering teams will use a combination of freely available, Red Hat provided as well as in-house developed custom plugins. The Backstage community maintains an extensive catalog of plugins that integrates with numerous third party APIs and products.</p>
+<p>Almost all the features and functionalities in the platform are written as plugins, that extend the core of RHDH. It is expected that platform engineering teams will use a combination of freely available, Red Hat provided, as well as in-house developed custom plugins. The Backstage community maintains an extensive catalog of plugins that integrates with numerous third party APIs and products.</p>
 <div class="paragraph">
 <p>Plugins can be purely front-end based. These plugins integrate with third party APIs external to the IDP and display customized content in the web UI.</p>
 </div>
