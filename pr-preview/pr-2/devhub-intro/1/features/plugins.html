@@ -68,7 +68,7 @@
     <a class="nav-link" href="catalog.html">Software Catalog</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="gpt.html">Golden Path Templates</a>
+    <a class="nav-link" href="gpt.html">Software Templates</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="docs.html">TechDocs and Search</a>
@@ -123,7 +123,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong>Plugins</strong> are Modular extensions that enhance the functionality and capabilities of the platform.
+<p><strong>Plugins</strong> are modular extensions that enhance the functionality and capabilities of the platform.
 They were designed to add specific features, integrations, or customizations on top of the base RHDH platform.</p>
 </div>
 <div class="paragraph">
@@ -134,15 +134,15 @@ Plugins can be of three different types:</p>
 <dl>
 <dt class="hdlist1">Frontend Plugins</dt>
 <dd>
-<p>A static front end user interface that is written in React + Typescript that integrates with internal or external APIs to render data in the IDP</p>
+<p>A static front end user interface that is written in React and TypeScript that integrates with internal or external APIs to render data in the IDP. For example, the <code>Tech Radar</code> plugin.</p>
 </dd>
 <dt class="hdlist1">Backend Plugins</dt>
 <dd>
-<p>A backend API that is written in Typescript that exposes an API to frontend plugins</p>
+<p>A backend API that is written in TypeScript that exposes an API to frontend plugins. For example, the <code>Architecture Decision Record (ADR) backend</code> plugin.</p>
 </dd>
 <dt class="hdlist1">Frontend + Backend plugins</dt>
 <dd>
-<p>A mix of frontend and backend Typescript code that provides a certain feature of functionality</p>
+<p>A mix of frontend and backend TypeScript code that provides a certain feature of functionality. For example, For example, the <code>ArgoCD</code> and <code>SonarQube</code> plugins.</p>
 </dd>
 </dl>
 </div>
@@ -151,7 +151,7 @@ Plugins can be of three different types:</p>
 The core features like Software Catalog, Templates, TechDocs and Search are themselves built as plugins in RHDH.</p>
 </div>
 <div class="paragraph">
-<p>There are hundreds of plugins created by the Backstage community that you can use to customize your instance of RHDH, and adapt the IDP to your needs.</p>
+<p>There are hundreds of <a href="https://backstage.io/plugins" target="_blank" rel="noopener">plugins</a> created by the Backstage community that you can use to customize your instance of RHDH, and adapt the IDP to your needs.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -270,7 +270,7 @@ The plugin allows users to visually see high level status of all associated task
 <h3 id="_topology_plugin"><a class="anchor" href="#_topology_plugin"></a>Topology Plugin</h3>
 <div class="paragraph">
 <p>The Topology plugin enables you to visualize the workloads such as Deployment, Job, Daemonset, Statefulset, CronJob, and Pods for any service on your Kubernetes or OpenShift cluster.
-The plugin originated from the <strong>Developer Perspective</strong> in the OpenShift Console.</p>
+The plugin originated from the OpenShift Topology view of a project in the <strong>Developer Perspective</strong> UI of the OpenShift Console.</p>
 </div>
 <div class="paragraph">
 <p>It has the following features:</p>
@@ -293,7 +293,7 @@ The plugin originated from the <strong>Developer Perspective</strong> in the Ope
 <p>View debugging logs for your containers</p>
 </li>
 <li>
-<p>Eliminates the stress and cognitive overload of accessing OpenShift or Kubernetes clusters directly via the Administrator console.</p>
+<p>Eliminates the stress and cognitive load of accessing OpenShift or Kubernetes clusters directly via the Administrator console.</p>
 </li>
 <li>
 <p>Graphical visualization of your services and workloads, and their status across clusters in real-time, with the ability to filter workloads by a specific cluster.</p>
@@ -322,7 +322,7 @@ The plugin originated from the <strong>Developer Perspective</strong> in the Ope
 <div class="title">Figure 12. RHDH Topology Plugin Resource View</div>
 </div>
 <div class="paragraph">
-<p>RHDH also provides a convenient link to the container logs to help developers troubleshoot application deployments with leaving RHDH.</p>
+<p>RHDH also provides a convenient link to the container logs to help developers troubleshoot application deployments without leaving RHDH.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -430,6 +430,11 @@ Your browser does not support the video tag.
 <p><a href="https://github.com/janus-idp/backstage-plugins/tree/main/plugins" target="_blank" rel="noopener">Janus IDP plugins</a></p>
 </li>
 </ul>
+</div>
+<div class="exampleblock">
+<div class="content">
+
+</div>
 </div>
 </div>
 </div>

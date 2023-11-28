@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Golden Path Templates :: Introduction to Red Hat Developer Hub</title>
+    <title>Software Templates :: Introduction to Red Hat Developer Hub</title>
     <link rel="prev" href="catalog.html">
     <link rel="next" href="docs.html">
     <meta name="generator" content="Antora 3.1.3">
@@ -69,7 +69,7 @@
     <a class="nav-link" href="catalog.html">Software Catalog</a>
   </li>
   <li class="nav-item is-current-page" data-depth="2">
-    <a class="nav-link" href="gpt.html">Golden Path Templates</a>
+    <a class="nav-link" href="gpt.html">Software Templates</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="docs.html">TechDocs and Search</a>
@@ -111,7 +111,7 @@
   <ul>
     <li><a href="../index.html">Introduction to Red Hat Developer Hub</a></li>
     <li><a href="index.html">Core Features of Red Hat Developer Hub</a></li>
-    <li><a href="gpt.html">Golden Path Templates</a></li>
+    <li><a href="gpt.html">Software Templates</a></li>
   </ul>
 </nav>
 </div>
@@ -120,22 +120,22 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Golden Path Templates</h1>
+<h1 class="page">Software Templates</h1>
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong>Golden Path Templates</strong> (GPT), also known as <strong>Software Templates</strong>, are pre-defined, standardized configurations and workflows that serve as a starting point for new projects or services. They are typically created and maintained by platform engineers, and consumed by developers.</p>
+<p><strong>Software Templates</strong>, formerly known as <strong>Golden Path Templates</strong> (GPT), are pre-defined, standardized configurations and workflows that serve as a starting point for new projects or services. They are typically created and maintained by platform engineers, and consumed by developers.</p>
 </div>
 <div class="paragraph">
-<p>GPTs typically include recommended configurations for various aspects of the application or service, such as application metadata, linters and static analysis tools, documentation, CI/CD pipelines, testing frameworks, security scanning tools and libraries, and many more features. GPTs enable true self-service for developers. They ensure consistency and adherence to organizational standards across different services or projects.</p>
+<p>Templates typically include recommended configurations for various aspects of the application or service, such as application metadata, linters and static analysis tools, documentation, CI/CD pipelines, testing frameworks, security scanning tools and libraries, and many more features. GPTs enable true self-service for developers. They ensure consistency and adherence to organizational standards across different services or projects.</p>
 </div>
 <div class="paragraph">
-<p>It is important to understand that GPTs should not be seen as yet another process pushed down to developers from a centralized authority. They are a way to encapsulate the various different tools, processes and utilities used in the organization and compose them together into a single tool capable of quickly scaffolding new projects, products and services of any kind. They are not meant to replace your already existing automation tools, but to complement them.</p>
+<p>It is important to understand that templates should not be seen as yet another process pushed down to developers from a centralized authority. They are a way to encapsulate the various different tools, processes and utilities used in the organization, and compose them together into a single tool capable of quickly scaffolding new projects, products and services of any kind. They are not meant to <strong>replace</strong> your already existing automation tools, but to <strong>complement</strong> them.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_creating_golden_path_templates"><a class="anchor" href="#_creating_golden_path_templates"></a>Creating Golden Path Templates</h2>
+<h2 id="_creating_software_templates"><a class="anchor" href="#_creating_software_templates"></a>Creating Software Templates</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>There are three different ways to create templates:</p>
@@ -143,7 +143,7 @@
 <div class="sect2">
 <h3 id="_manually_using_yaml_files"><a class="anchor" href="#_manually_using_yaml_files"></a>Manually using YAML Files</h3>
 <div class="paragraph">
-<p>Templates are defined in a YAML file with the <strong>kind: Template</strong> attribute. The template defines the set of scaffolded files, along with parameters and variables that capture input to the template.</p>
+<p>Templates are defined in a YAML file with the <strong>kind: Template</strong> attribute. The template refers to a Git repository that contains files (with optional placeholders) that are processed during scaffolding.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -170,7 +170,7 @@ spec:
 </div>
 </div>
 <div class="paragraph">
-<p>The template YAML file also describes the metadata, the source code repositories where stubbed code and configuration is stored, and a series of <strong>steps</strong> that describes the things that RHDH will perform to create a fully functional and deployable application or service from the template.</p>
+<p>The template YAML file describes the metadata, the source code repositories where stubbed code and configuration is stored, and a series of <strong>steps</strong> that describes the things that RHDH will perform to create a fully functional and deployable application or service from the template.</p>
 </div>
 <div class="paragraph">
 <p>These YAML files are then parsed and displayed in the Software Catalog screen of RHDH.</p>
@@ -247,13 +247,13 @@ spec:
 <div class="sect2">
 <h3 id="_third_party_integration_using_api"><a class="anchor" href="#_third_party_integration_using_api"></a>Third-party Integration using API</h3>
 <div class="paragraph">
-<p>You can also import templates into RHDH using its native Typescript APIs. This is useful in scenarios where you want to integrate with third-party systems, but it would require you to extend the RHDH Typescript API. This method is more complex than the YAML configuration methods, and is not recommended unless you have a specific need outlined above.</p>
+<p>You can also import templates into RHDH using its native TypeScript APIs. This is useful in scenarios where you want to integrate with third-party systems, but it would require you to extend the RHDH TypeScript API. This method is more complex than the YAML configuration methods, and is not recommended unless you have a specific need outlined above.</p>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_using_golden_path_templates"><a class="anchor" href="#_using_golden_path_templates"></a>Using Golden Path Templates</h2>
+<h2 id="_using_software_templates"><a class="anchor" href="#_using_software_templates"></a>Using Software Templates</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Developers see a list of Templates in the Software Catalog screen of RHDH. The developer chooses a template from which to instantiate the application or service, and RHDH will ask him a series of questions based on the template configuration.</p>
@@ -282,10 +282,10 @@ spec:
 </div>
 </div>
 <div class="sect1">
-<h2 id="_demonstration_rhdh_golden_path_templates"><a class="anchor" href="#_demonstration_rhdh_golden_path_templates"></a>Demonstration: RHDH Golden Path Templates</h2>
+<h2 id="_demonstration_rhdh_software_templates"><a class="anchor" href="#_demonstration_rhdh_software_templates"></a>Demonstration: RHDH Software Templates</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Watch this short 5 minute demonstration about the GPTs in RHDH.</p>
+<p>Watch this short 5 minute demonstration about the Software Templates in RHDH.</p>
 </div>
 <div class="videoblock">
 <div class="content">
@@ -314,6 +314,11 @@ Your browser does not support the video tag.
 <p><a href="https://backstage.io/docs/integrations/gitlab/discovery" target="_blank" rel="noopener">GitLab Discovery</a></p>
 </li>
 </ul>
+</div>
+<div class="exampleblock">
+<div class="content">
+
+</div>
 </div>
 </div>
 </div>
