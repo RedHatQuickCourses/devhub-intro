@@ -1,18 +1,18 @@
-= Golden Path Templates
+= Software Templates
 
-**Golden Path Templates** (GPT), also known as **Software Templates**, are pre-defined, standardized configurations and workflows that serve as a starting point for new projects or services. They are typically created and maintained by platform engineers, and consumed by developers.
+**Software Templates**, formerly known as **Golden Path Templates** (GPT), are pre-defined, standardized configurations and workflows that serve as a starting point for new projects or services. They are typically created and maintained by platform engineers, and consumed by developers.
 
-GPTs typically include recommended configurations for various aspects of the application or service, such as application metadata, linters and static analysis tools, documentation, CI/CD pipelines, testing frameworks, security scanning tools and libraries, and many more features. GPTs enable true self-service for developers. They ensure consistency and adherence to organizational standards across different services or projects.
+Templates typically include recommended configurations for various aspects of the application or service, such as application metadata, linters and static analysis tools, documentation, CI/CD pipelines, testing frameworks, security scanning tools and libraries, and many more features. GPTs enable true self-service for developers. They ensure consistency and adherence to organizational standards across different services or projects.
 
-It is important to understand that GPTs should not be seen as yet another process pushed down to developers from a centralized authority. They are a way to encapsulate the various different tools, processes and utilities used in the organization and compose them together into a single tool capable of quickly scaffolding new projects, products and services of any kind. They are not meant to replace your already existing automation tools, but to complement them.
+It is important to understand that templates should not be seen as yet another process pushed down to developers from a centralized authority. They are a way to encapsulate the various different tools, processes and utilities used in the organization, and compose them together into a single tool capable of quickly scaffolding new projects, products and services of any kind. They are not meant to **replace** your already existing automation tools, but to **complement** them.
 
-== Creating Golden Path Templates
+== Creating Software Templates
 
 There are three different ways to create templates:
 
 === Manually using YAML Files
 
-Templates are defined in a YAML file with the **kind: Template** attribute. The template defines the set of scaffolded files, along with parameters and variables that capture input to the template.
+Templates are defined in a YAML file with the **kind: Template** attribute. The template refers to a Git repository that contains files (with optional placeholders) that are processed during scaffolding.
 
 ```yaml
 apiVersion: scaffolder.backstage.io/v1beta3
@@ -37,7 +37,7 @@ spec:
 ...
 ```
 
-The template YAML file also describes the metadata, the source code repositories where stubbed code and configuration is stored, and a series of **steps** that describes the things that RHDH will perform to create a fully functional and deployable application or service from the template. 
+The template YAML file describes the metadata, the source code repositories where stubbed code and configuration is stored, and a series of **steps** that describes the things that RHDH will perform to create a fully functional and deployable application or service from the template. 
 
 These YAML files are then parsed and displayed in the Software Catalog screen of RHDH.
 
@@ -106,9 +106,9 @@ catalog:
 
 === Third-party Integration using API
 
-You can also import templates into RHDH using its native Typescript APIs. This is useful in scenarios where you want to integrate with third-party systems, but it would require you to extend the RHDH Typescript API. This method is more complex than the YAML configuration methods, and is not recommended unless you have a specific need outlined above.
+You can also import templates into RHDH using its native TypeScript APIs. This is useful in scenarios where you want to integrate with third-party systems, but it would require you to extend the RHDH TypeScript API. This method is more complex than the YAML configuration methods, and is not recommended unless you have a specific need outlined above.
 
-== Using Golden Path Templates
+== Using Software Templates
 
 Developers see a list of Templates in the Software Catalog screen of RHDH. The developer chooses a template from which to instantiate the application or service, and RHDH will ask him a series of questions based on the template configuration.
 
@@ -120,9 +120,9 @@ image::rhdh-new-comp-gpt-2.png[title=Step 2: Provide Container Image Details,wid
 
 image::rhdh-new-comp-gpt-3.png[title=Step 3: Provide Git repository details,width=800px]
 
-== Demonstration: RHDH Golden Path Templates
+== Demonstration: RHDH Software Templates
 
-Watch this short 5 minute demonstration about the GPTs in RHDH.
+Watch this short 5 minute demonstration about the Software Templates in RHDH.
 
 video::gpt.mp4[width=800,height=480]
 

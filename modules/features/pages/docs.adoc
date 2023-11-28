@@ -2,21 +2,21 @@
 
 One of the biggest challenges in software development is keeping **internal technical documentation** (as opposed to external facing customer or user documentation) fully updated. Large organizations can afford to maintain one or more technical writers whose job involves curating and maintaining technical documentation, but this is not the case in many smaller to medium sized companies.
 
-Wikis, Sharepoint portals and other ad-hoc solutions can work in many cases, but the challenges remain to keep it updated with the rapidly evolving ecosystem of products and services in the company. You need to make it easy to write and view documentation.
+Wikis, SharePoint portals, Content Management Systems, and other ad-hoc solutions can work in many cases, but the challenges remain to keep it updated with the rapidly evolving ecosystem of products and services in the company. You need to make it easy to write, search, and view documentation.
 
-RHDH TechDocs provides a low friction, easy to use documentation facility that can live right alongside the source code of the application. 
+RHDH `TechDocs` provides a low friction, easy to use documentation facility that can live right alongside the source code of the application. 
 
 image::rhdh-docs-list.png[title=RHDH TechDocs,width=800px]
 
-The developer writes the technical documentation in simple Markdown format and stores it in version control just like any other software development artifact. RHDH renders these marked up source documents into HTML that can be viewed in RHDH. The documentation is linked and embedded into many place all over RHDH to enable ease of access.
+The developer writes the technical documentation in simple Markdown format and stores it in version control just like any other software development artifact. A CI/CD workflow renders these marked up source documents into HTML that can then be stored (for example in AWS S3, or a CDN), and then viewed in RHDH. The documentation can be linked and embedded into a few different places in RHDH to enable ease of access. The documentation is integrated with the RHDH Search plugin, and it enables the developers in your company to quickly find the information they seek.
 
 image::rhdh-docs-view.png[title=View Technical Docs,width=800px]
 
-RHDH can also auto-generate API documentation from OpenAPI/Swagger.io specs in the application
+RHDH can also leverage the OpenAPI/Swagger.io UI to render and visualize the API specification for a REST based application or service.
 
 image::rhdh-api-docs.png[title=API Docs,width=800px]
 
-NOTE: TechDocs is not a silver bullet. You still need to inculcate a **culture** of maintaining and writing documents, especially for large software systems.
+NOTE: TechDocs is not a silver bullet. You still need to inculcate a **culture** of maintaining and writing documentation, especially for large software systems.
 
 == Search
 
@@ -28,10 +28,10 @@ image::rhdh-search.png[title=RHDH Search,width=800px]
 
 Features:
 
-* You can integrate RHDH search with many search engines (Elasticsearch, Lunr, Solr, PostgreSQL full text search, and more).
+* You can integrate RHDH search with several popular search engines (Elasticsearch, Lunr, PostgreSQL full text search, and more).
 * You can extend it by creating **collators** for indexing content from plugins and other sources.
 * You can customize the look and feel of the search results.
-* You can configure your own search engines by implementing and extending the Typescript APIs of RHDH.
+* You can configure your own search engines by implementing and extending the TypeScript APIs of RHDH.
 
 == References
 

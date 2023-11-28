@@ -1,19 +1,19 @@
 = Plugins
 
-**Plugins** are Modular extensions that enhance the functionality and capabilities of the platform.
+**Plugins** are modular extensions that enhance the functionality and capabilities of the platform.
 They were designed to add specific features, integrations, or customizations on top of the base RHDH platform.
 
 Plugins can provide new pages in the developer portal, new components, new APIs, new services, or even complete workflows within RHDH.
 Plugins can be of three different types:
 
-Frontend Plugins:: A static front end user interface that is written in React + Typescript that integrates with internal or external APIs to render data in the IDP
-Backend Plugins:: A backend API that is written in Typescript that exposes an API to frontend plugins
-Frontend + Backend plugins:: A mix of frontend and backend Typescript code that provides a certain feature of functionality
+Frontend Plugins:: A static front end user interface that is written in React and TypeScript that integrates with internal or external APIs to render data in the IDP. For example, the `Tech Radar` plugin.
+Backend Plugins:: A backend API that is written in TypeScript that exposes an API to frontend plugins. For example, the `Architecture Decision Record (ADR) backend` plugin.
+Frontend + Backend plugins:: A mix of frontend and backend TypeScript code that provides a certain feature of functionality. For example, For example, the `ArgoCD` and `SonarQube` plugins.
 
 Red Hat Developer Hub (RHDH) has a very flexible and extensive set of plugins that provide most of the functionality in the product.
 The core features like Software Catalog, Templates, TechDocs and Search are themselves built as plugins in RHDH.
 
-There are hundreds of plugins created by the Backstage community that you can use to customize your instance of RHDH, and adapt the IDP to your needs.
+There are hundreds of https://backstage.io/plugins[plugins^] created by the Backstage community that you can use to customize your instance of RHDH, and adapt the IDP to your needs.
 
 image::rhdh-plugins.png[title=RHDH Plugins,width=800px]
 
@@ -71,7 +71,7 @@ image::rhdh-keycloak-users.png[title=RHDH Keycloak Users and Groups,width=800px]
 === Topology Plugin
 
 The Topology plugin enables you to visualize the workloads such as Deployment, Job, Daemonset, Statefulset, CronJob, and Pods for any service on your Kubernetes or OpenShift cluster.
-The plugin originated from the **Developer Perspective** in the OpenShift Console.
+The plugin originated from the OpenShift Topology view of a project in the **Developer Perspective** UI of the OpenShift Console.
 
 It has the following features:
 
@@ -80,7 +80,7 @@ It has the following features:
 * Visualize real time status of your workloads
 * View related resources for your applications in the RHDH Software Catalog
 * View debugging logs for your containers
-* Eliminates the stress and cognitive overload of accessing OpenShift or Kubernetes clusters directly via the Administrator console.
+* Eliminates the stress and cognitive load of accessing OpenShift or Kubernetes clusters directly via the Administrator console.
 * Graphical visualization of your services and workloads, and their status across clusters in real-time, with the ability to filter workloads by a specific cluster.
 
 image::rhdh-topology-plugin.png[title=RHDH Topology Plugin,width=800px]
@@ -91,7 +91,7 @@ image::rhdh-topology-detail.png[title=RHDH Topology Plugin Pod View,width=800px]
 
 image::rhdh-topology-detail-2.png[title=RHDH Topology Plugin Resource View,width=800px]
 
-RHDH also provides a convenient link to the container logs to help developers troubleshoot application deployments with leaving RHDH.
+RHDH also provides a convenient link to the container logs to help developers troubleshoot application deployments without leaving RHDH.
 
 image::rhdh-topology-logs.png[title=RHDH Topology Plugin Container Logs,width=800px]
 
