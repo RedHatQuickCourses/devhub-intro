@@ -69,7 +69,7 @@
     <a class="nav-link" href="catalog.html">Software Catalog</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="gpt.html">Golden Path Templates</a>
+    <a class="nav-link" href="gpt.html">Software Templates</a>
   </li>
   <li class="nav-item is-current-page" data-depth="2">
     <a class="nav-link" href="docs.html">TechDocs and Search</a>
@@ -121,6 +121,41 @@
 </aside>
 <article class="doc">
 <h1 class="page">TechDocs and Search</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>One of the biggest challenges in software development is keeping <strong>internal technical documentation</strong> (as opposed to external facing customer or user documentation) fully updated. Large organizations can afford to maintain one or more technical writers whose job involves curating and maintaining technical documentation, but this is not the case in many smaller to medium sized companies.</p>
+</div>
+<div class="paragraph">
+<p>Wikis, SharePoint portals, Content Management Systems, and other ad-hoc solutions can work in many cases, but the challenges remain to keep it updated with the rapidly evolving ecosystem of products and services in the company. You need to make it easy to write, search, and view documentation.</p>
+</div>
+<div class="paragraph">
+<p>RHDH <code>TechDocs</code> provides a low friction, easy to use documentation facility that can live right alongside the source code of the application.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/rhdh-docs-list.png" alt="rhdh docs list" width="800px">
+</div>
+<div class="title">Figure 1. RHDH TechDocs</div>
+</div>
+<div class="paragraph">
+<p>The developer writes the technical documentation in simple Markdown format and stores it in version control just like any other software development artifact. A CI/CD workflow renders these marked up source documents into HTML that can then be stored (for example in AWS S3, or a CDN), and then viewed in RHDH. The documentation can be linked and embedded into a few different places in RHDH to enable ease of access. The documentation is integrated with the RHDH Search plugin, and it enables the developers in your company to quickly find the information they seek.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/rhdh-docs-view.png" alt="rhdh docs view" width="800px">
+</div>
+<div class="title">Figure 2. View Technical Docs</div>
+</div>
+<div class="paragraph">
+<p>RHDH can also leverage the OpenAPI/Swagger.io UI to render and visualize the API specification for a REST based application or service.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/rhdh-api-docs.png" alt="rhdh api docs" width="800px">
+</div>
+<div class="title">Figure 3. API Docs</div>
+</div>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -128,13 +163,74 @@
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-&gt;&gt;&gt;&gt; THIS SECTION IS UNDER DEVELOPMENT &lt;&lt;&lt;&lt;
+TechDocs is not a silver bullet. You still need to inculcate a <strong>culture</strong> of maintaining and writing documentation, especially for large software systems.
 </td>
 </tr>
 </table>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_search"><a class="anchor" href="#_search"></a>Search</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>RHDH Search lets you find the right information you are looking for in RHDH. RHDH Search does not implement its own search engine, rather, it provides an interface between your RHDH instance and a search engine of your choice. RHDH search indexes many pieces of information in RHDH - catalog items, templates, documentation, and more.</p>
+</div>
+<div class="paragraph">
+<p>By default, RHDH Search comes with an in-memory search engine implementation built on top of the open source <strong>Lunr</strong> search engine.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/rhdh-search.png" alt="rhdh search" width="800px">
+</div>
+<div class="title">Figure 4. RHDH Search</div>
+</div>
+<div class="paragraph">
+<p>Features:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>You can integrate RHDH search with several popular search engines (Elasticsearch, Lunr, PostgreSQL full text search, and more).</p>
+</li>
+<li>
+<p>You can extend it by creating <strong>collators</strong> for indexing content from plugins and other sources.</p>
+</li>
+<li>
+<p>You can customize the look and feel of the search results.</p>
+</li>
+<li>
+<p>You can configure your own search engines by implementing and extending the TypeScript APIs of RHDH.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_references"><a class="anchor" href="#_references"></a>References</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://janus-idp.io/blog/2023/06/03/production-ready-techdocs" target="_blank" rel="noopener">Recommended Approach to Configuring TechDocs for Backstage on OpenShift</a></p>
+</li>
+<li>
+<p><a href="https://backstage.io/docs/features/search/" target="_blank" rel="noopener">Backstage Search</a></p>
+</li>
+<li>
+<p><a href="https://backstage.io/docs/features/search/search-engines" target="_blank" rel="noopener">Backstage Search Engines</a></p>
+</li>
+</ul>
+</div>
+<div class="exampleblock">
+<div class="content">
+
+</div>
+</div>
+</div>
+</div>
 <nav class="pagination">
-  <span class="prev"><a href="gpt.html">Golden Path Templates</a></span>
+  <span class="prev"><a href="gpt.html">Software Templates</a></span>
   <span class="next"><a href="plugins.html">Plugins</a></span>
 </nav>
 </article>
