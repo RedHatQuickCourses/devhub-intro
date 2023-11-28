@@ -6,7 +6,7 @@ While technologies, processes and tools like Agile, DevOps, cloud computing and 
 
 Over the last decade, the concept of _Developer Experience_ has gained traction in the industry. There are a few things an organization can do to improve the developer experience by letting them focus on just writing code as much as possible to solve business problems:
 
-* Reduce the cognitive overload on developers by abstracting away infrastructure and operational concerns 
+* Reduce the cognitive load on developers by abstracting away infrastructure and operational concerns 
 * Provide more self-service capabilities to kick off projects quickly without manually assembling all the components
 * Improve discovery of tools, APIs, libraries and documentation and promote reuse
 * Provide a "single pane of glass" dashboard that provides real-time visualization and details about projects, workflows, CI/CD pipelines, and their deployment status
@@ -47,16 +47,16 @@ image::backstage-janus-rhdh-flow.png[width=800px]
 
 === Backstage
 
-**Backstage** is an open-source platform for building developer portals created by Spotify and donated to the Cloud Native Computing Foundation (CNCF). Rather than a product that is ready to use by developers, Backstage provides the core features for building developer portals, and has an extensive list of plugins supporting integration with platforms, runtimes and external APIs. Platform engineering teams take the base Backstage platform, and then extend and customize it for their developers' needs. Refer to the Backtage website for a full list of plugins.
+**Backstage** is an open-source platform for building developer portals created by Spotify and donated to the Cloud Native Computing Foundation (CNCF). Rather than a product that is ready to use by developers, Backstage provides the core features for building developer portals, and has an extensive list of plugins supporting integration with platforms, runtimes and external APIs. Platform engineering teams take the base Backstage platform, and then extend and customize it for their developers' needs. Refer to the Backstage website for a full list of plugins.
 
 === Project Janus
 
 **Project Janus** is a Red Hat-sponsored open source community for building IDPs and plugins using Backstage.
 It is the “mid-stream” for the Red Hat Developer Hub product, sitting between Backstage upstream and the supported Red Hat product offering which is focused on four areas:
 
-* Installation on OpenShift Container Platform
-* Developing and enhancing plugins, specifically targeting other Red Hat products like Red Hat OpenShift Pipelines, Red Hat OpenShift GitOps, Red Hat Single Sign-On (RHSSO) and many more
-* Providing "golden path" template examples and software templates
+* Installation on the Red Hat OpenShift Container Platform
+* Developing and enhancing plugins, specifically targeting other Red Hat products like Red Hat OpenShift Pipelines, Red Hat OpenShift GitOps, Red Hat build of Keycloak, and many more
+* Providing software templates
 * Improving the upstream Backstage platform
 
 Below is an hour long demonstration video and discussion about Janus IDP.
@@ -65,7 +65,7 @@ video::Ck7r5DpEwj0[youtube,title=GitOps Guide to the Galaxy | Episode 60 - What'
 
 === Red Hat Developer Hub
 
-**Red Hat Developer Hub** is the enterprise product that Red Hat builds and supports in production. It is based on the Janus project, and provides an integrated developer platform for customers. Several important plugins that integrate with other Red Hat Enterprise products are bundled in the product. The product is built for deployment on OpenShift Container Platform, and Red Hat builds, integrates and tests all the container images on Red Hat Enterprise Linux (RHEL) Universal Base Images (UBI). These UBI based container images are built for improved security and stability, and are constantly tested and updated to address security vulnerabilities.
+**Red Hat Developer Hub** is the enterprise product that Red Hat builds and supports in production. It is based on the mid-stream Janus project (Janus is based on the upstream Backstage project), and provides an integrated developer platform for customers. Several important plugins that integrate with other Red Hat Enterprise products are bundled in the product. The product is built for deployment on OpenShift Container Platform, and Red Hat builds, integrates and tests all the container images on Red Hat Enterprise Linux (RHEL) Universal Base Images (UBI). These UBI based container images are built for improved security and stability, and are constantly tested and updated to address security vulnerabilities.
 
 image::rhdh-big-picture.png[width=800px]
 
