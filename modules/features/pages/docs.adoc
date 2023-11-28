@@ -1,3 +1,41 @@
 = TechDocs and Search
 
-NOTE: >>>> THIS SECTION IS UNDER DEVELOPMENT <<<<
+One of the biggest challenges in software development is keeping **internal technical documentation** (as opposed to external facing customer or user documentation) fully updated. Large organizations can afford to maintain one or more technical writers whose job involves curating and maintaining technical documentation, but this is not the case in many smaller to medium sized companies.
+
+Wikis, SharePoint portals, Content Management Systems, and other ad-hoc solutions can work in many cases, but the challenges remain to keep it updated with the rapidly evolving ecosystem of products and services in the company. You need to make it easy to write, search, and view documentation.
+
+RHDH `TechDocs` provides a low friction, easy to use documentation facility that can live right alongside the source code of the application. 
+
+image::rhdh-docs-list.png[title=RHDH TechDocs,width=800px]
+
+The developer writes the technical documentation in simple Markdown format and stores it in version control just like any other software development artifact. A CI/CD workflow renders these marked up source documents into HTML that can then be stored (for example in AWS S3, or a CDN), and then viewed in RHDH. The documentation can be linked and embedded into a few different places in RHDH to enable ease of access. The documentation is integrated with the RHDH Search plugin, and it enables the developers in your company to quickly find the information they seek.
+
+image::rhdh-docs-view.png[title=View Technical Docs,width=800px]
+
+RHDH can also leverage the OpenAPI/Swagger.io UI to render and visualize the API specification for a REST based application or service.
+
+image::rhdh-api-docs.png[title=API Docs,width=800px]
+
+NOTE: TechDocs is not a silver bullet. You still need to inculcate a **culture** of maintaining and writing documentation, especially for large software systems.
+
+== Search
+
+RHDH Search lets you find the right information you are looking for in RHDH. RHDH Search does not implement its own search engine, rather, it provides an interface between your RHDH instance and a search engine of your choice. RHDH search indexes many pieces of information in RHDH - catalog items, templates, documentation, and more.
+
+By default, RHDH Search comes with an in-memory search engine implementation built on top of the open source **Lunr** search engine.
+
+image::rhdh-search.png[title=RHDH Search,width=800px]
+
+Features:
+
+* You can integrate RHDH search with several popular search engines (Elasticsearch, Lunr, PostgreSQL full text search, and more).
+* You can extend it by creating **collators** for indexing content from plugins and other sources.
+* You can customize the look and feel of the search results.
+* You can configure your own search engines by implementing and extending the TypeScript APIs of RHDH.
+
+== References
+
+* https://janus-idp.io/blog/2023/06/03/production-ready-techdocs[Recommended Approach to Configuring TechDocs for Backstage on OpenShift^]
+* https://backstage.io/docs/features/search/[Backstage Search^]
+* https://backstage.io/docs/features/search/search-engines[Backstage Search Engines^]
+=======
