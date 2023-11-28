@@ -132,3 +132,4 @@ video::gpt.mp4[width=800,height=480]
 * https://backstage.io/docs/features/software-templates/writing-templates[Create your own Templates^]
 * https://backstage.io/docs/integrations/github/discovery[GitHub Discovery^]
 * https://backstage.io/docs/integrations/gitlab/discovery[GitLab Discovery^]
+=======
