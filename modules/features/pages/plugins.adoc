@@ -20,6 +20,11 @@ image::rhdh-plugins.png[title=RHDH Plugins,width=800px]
 == Red Hat Supported Plugins
 
 Red Hat actively participates in the thriving Backstage community by developing and supporting a number of useful plugins that are pre-integrated into RHDH by default.
+
+RHDH suppports the concept of *dynamic plugins*, which enables you to load plugins into your RHDH instance without having to recompile your code, or rebuild the container.
+
+RHDH is pre-loaded with a selection of dynamic plugins. Most of these dynamic plugins are disabled by default due to the need for mandatory configuration.
+
 Some of the most important ones are listed below. There are plans to develop more plugins that integrate with the Red Hat product ecosystem.
 
 === Tekton Plugin
@@ -129,6 +134,6 @@ video::plugin.mp4[width=800,height=480]
 * https://backstage.io/docs/plugins[Backstage Plugins Introduction^]
 * https://backstage.io/plugins[List of Backstage plugins^]
 * https://backstage.io/docs/plugins/create-a-plugin[Create a Backstage plugin^]
-* https://access.redhat.com/documentation/en-us/red_hat_developer_hub/0.2[List of Red Hat built plugins]
+* https://access.redhat.com/documentation/en-us/red_hat_developer_hub/1.0/html-single/release_notes_for_red_hat_developer_hub_1.0/index#supported-plugins-in-red-hat-developer-hub-1-0[List of supported plugins in RHDH]
+* https://access.redhat.com/documentation/en-us/red_hat_developer_hub/1.0/html-single/administration_guide_for_red_hat_developer_hub/index#dynamic-plugins-matrix[Dynamic plugins support matrix^]
 * https://github.com/janus-idp/backstage-plugins/tree/main/plugins[Janus IDP plugins^]
-=======

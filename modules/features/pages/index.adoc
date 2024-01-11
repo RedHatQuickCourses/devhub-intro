@@ -13,4 +13,3 @@ This chapter provides a basic introduction to the default features that come wit
 == Goals
 
 * Explore the core features of Red Hat Developer Hub that are available by default.
-=======
