@@ -60,7 +60,7 @@ image::rhdh-quay-sec-scan.png[title=RHDH Quay.io Plugin Security Scanner,width=8
 
 === Keycloak Plugin
 
-The Keycloak plugin allows RHDH to provide Single Sign-On (SSO) features for the developer portal. It maps the Keycloak user and group entities to corresponding users and groups (teams) in RHDH. Integrating with Keycloak enables the use of multiple authentication and providers, for example Social login (Google, Microsoft, Meta, Twitter/X and more), Active Directory Authentication and SAML 2.0 based identity providers, OAuth and OIDC compliant identity providers, and more.
+The Keycloak plugin allows RHDH import users and groups from Keycloak realms. It maps the Keycloak user and groups entities to corresponding users and groups (teams) in RHDH. 
 
 The Keycloak backend plugin has the following capabilities:
 
@@ -72,6 +72,8 @@ image::rhdh-keycloak-plugin.png[title=RHDH Keycloak Plugin,width=800px]
 Users and Groups from the Keycloak domain are mapped to users and groups (teams) in RHDH.
 
 image::rhdh-keycloak-users.png[title=RHDH Keycloak Users and Groups,width=800px]
+
+NOTE: The Keycloak plugin does *NOT* support authentication for single sign-on (SSO) in the current 1.0 release of RHDH. The list of supported authentication providers is available at https://backstage.io/docs/auth/#built-in-authentication-providers. 
 
 === Topology Plugin
 
