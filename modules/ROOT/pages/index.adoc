@@ -6,7 +6,7 @@ This course is the first in a series of 3 courses about **Red{nbsp}Hat Developer
 
 1. Introduction to Red Hat Developer Hub (_This course_)
 2. https://redhatquickcourses.github.io/devhub-admin[Red Hat Developer Hub Administration^]
-3. https://redhatquickcourses.github.io/devhub-intro[Building Developer Portals with Red Hat Developer Hub^]
+3. https://redhatquickcourses.github.io/devhub-build[Building Developer Portals with Red Hat Developer Hub^]
 
 NOTE: This introductory course is focused on the **"WHAT"** and **"WHY"** of Red Hat Developer Hub.
 The **"HOW"** (detailed configuration and integration of plugins), is covered in the later courses in the learning path (courses 2 and 3).
