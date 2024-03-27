@@ -2,7 +2,7 @@
 
 **Software Templates**, formerly known as **Golden Path Templates** (GPT), are pre-defined, standardized configurations and workflows that serve as a starting point for new projects or services. They are typically created and maintained by platform engineers, and consumed by developers.
 
-Templates typically include recommended configurations for various aspects of the application or service, such as application metadata, linters and static analysis tools, documentation, CI/CD pipelines, testing frameworks, security scanning tools and libraries, and many more features. GPTs enable true self-service for developers. They ensure consistency and adherence to organizational standards across different services or projects.
+Templates typically include recommended configurations for various aspects of the application or service, such as application metadata, linters and static analysis tools, documentation, CI/CD pipelines, testing frameworks, security scanning tools and libraries, and many more features. Software Templates enable true self-service for developers. They ensure consistency and adherence to organizational standards across different services or projects.
 
 It is important to understand that templates should not be seen as yet another process pushed down to developers from a centralized authority. They are a way to encapsulate the various different tools, processes and utilities used in the organization, and compose them together into a single tool capable of quickly scaffolding new projects, products and services of any kind. They are not meant to **replace** your already existing automation tools, but to **complement** them.
 
