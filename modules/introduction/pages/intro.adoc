@@ -61,13 +61,27 @@ It is the “mid-stream” for the Red Hat Developer Hub product, sitting betwee
 
 Below is an hour long demonstration video and discussion about Janus IDP.
 
-video::Ck7r5DpEwj0[youtube,title=GitOps Guide to the Galaxy | Episode 60 - What's Janus IDP?,width=640,height=480]
+video::Ck7r5DpEwj0[youtube,title=GitOps Guide to the Galaxy - What's Janus IDP?,width=640,height=480]
 
 === Red Hat Developer Hub
 
 **Red Hat Developer Hub** is the enterprise product that Red Hat builds and supports in production. It is based on the mid-stream Janus project (Janus is based on the upstream Backstage project), and provides an integrated developer platform for customers. Several important plugins that integrate with other Red Hat Enterprise products are bundled in the product. The product is built for deployment on OpenShift Container Platform, and Red Hat builds, integrates and tests all the container images on Red Hat Enterprise Linux (RHEL) Universal Base Images (UBI). These UBI based container images are built for improved security and stability, and are constantly tested and updated to address security vulnerabilities.
 
 image::rhdh-big-picture.png[width=800px]
+
+Benefits of Red Hat Developer Hub include:
+
+* Increased developer productivity: Increases productivity by eliminating common organizational challenges, enabling seamless collaboration, and providing clear guidelines for creating, developing, and deploying applications.
+
+* Unified self-service dashboard: Provides development teams with a unified dashboard covering various aspects such as Git, CI/CD, Secure Software Supply Chain, OpenShift/Kubernetes clusters, JIRA, GitLab and GitHub issues, monitoring, API, documentation, and more. These features are facilitated by over 150 plugins. All curated by a platform engineering team, aligning with the company best practices.
+
+* Best practices through software templates: Automates organizational best practices by encoding common tasks such as creating new applications, running Ansible jobs, and establishing CI/CD pipelines for production deployment in Git.
+
+* Scalable technical documentation: Code and documentation resides in the same repository, eliminating dependencies on proprietary documentation systems.
+
+* Efficient onboarding for new developers and discoverability: New developers quickly adapt and become productive within a short timeframe.
+
+* Robust enterprise Role-Based Access Control (RBAC): Empowers administrators to create roles, assign users or groups to roles, and implement robust security policies for enhanced access control.
 
 == Demonstration: The Parts of RHDH
 
