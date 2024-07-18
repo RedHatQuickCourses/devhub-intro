@@ -50,7 +50,7 @@ The first three methods are the most common way to populate the catalog, with th
 
 == Viewing the Software Catalog
 
-By default the software catalog shows components owned by the team of the logged in user. But you can also switch the search filters see all the components in your organization's software catalog. The RHDH web UI provides powerful full text search and filtering capability to search through thousands of components.
+By default the software catalog shows components owned by the team of the logged in user. But you can also switch the search filters and see all the components in your organization's software catalog. The RHDH web UI provides powerful full text search and filtering capability to search through thousands of components.
 
 image::rhdh-search-filter.png[title=Searching and Filtering the Software Catalog,width=800px]
 

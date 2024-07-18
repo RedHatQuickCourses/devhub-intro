@@ -8,7 +8,7 @@ Plugins can be of three different types:
 
 Frontend Plugins:: A static front end user interface that is written in React and TypeScript that integrates with internal or external APIs to render data in the IDP. For example, the `Tech Radar` plugin.
 Backend Plugins:: A backend API that is written in TypeScript that exposes an API to frontend plugins. For example, the `Architecture Decision Record (ADR) backend` plugin.
-Frontend + Backend plugins:: A mix of frontend and backend TypeScript code that provides a certain feature of functionality. For example, For example, the `ArgoCD` and `SonarQube` plugins.
+Frontend + Backend plugins:: A mix of frontend and backend TypeScript code that provides a certain feature of functionality. For example, the `ArgoCD` and `SonarQube` plugins.
 
 Red Hat Developer Hub (RHDH) has a very flexible and extensive set of plugins that provide most of the functionality in the product.
 The core features like Software Catalog, Templates, TechDocs and Search are themselves built as plugins in RHDH.
