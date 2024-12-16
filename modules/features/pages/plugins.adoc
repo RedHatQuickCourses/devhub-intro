@@ -27,6 +27,30 @@ RHDH is pre-loaded with a selection of dynamic plugins. Most of these dynamic pl
 
 Some of the most important ones are listed below. There are plans to develop more plugins that integrate with the Red Hat product ecosystem.
 
+=== Ansible Plugin
+
+The Ansible Plugin enables you to learn about Ansible, create automation projects, and access opinionated workflows and tools to develop and test your automation code.
+
+image::rhdh-ansible-plugin.png[title=Landing page of Ansible plug-ins for RHDH,width=800px]
+
+Key features of the plugin include the following:
+
+* **Seamless content creation**
+** The solution includes Developer Hub software templates that facilitate a push-button experience for creating repositories to host Ansible Playbooks, roles and collections.
+
+image::rhdh-ansible-plugin-1.png[title=Embedded software templates for push-button Ansible creation experience,width=800px]
+
+* **Integrated pipelines**
+** Pre-configured pipelines, deployed as part of the template repositories, help make your Ansible content consistent. Integrating ansible-lint, these pipelines automatically run upon any push to the repository, so that content adheres to best practices.
+
+* **Integrations with Ansible Automation Platform**
+** The platform provides links to private automation hub and automation controller, making certified, ready-to-use content more visible to help users get started quickly and run their automation.
+
+* **Comprehensive learning paths**
+** Developer Hub offers expanded learning paths to guide users in customizing best practices and policies for automation. A dedicated section for Ansible documentation, learning paths, labs and knowledge base articles provides a one-stop shop for all Ansible-related help content.
+
+image::rhdh-ansible-plugin-2.png[title=Ansible-specific learning paths and labs,width=800px]
+
 === Tekton Plugin
 
 The Tekton plugin enables you to visualize the results of CI/CD pipeline runs on your Kubernetes or OpenShift clusters.
@@ -136,6 +160,7 @@ video::plugin.mp4[width=800,height=480]
 * https://backstage.io/docs/plugins[Backstage Plugins Introduction^]
 * https://backstage.io/plugins[List of Backstage plugins^]
 * https://backstage.io/docs/plugins/create-a-plugin[Create a Backstage plugin^]
-* https://access.redhat.com/documentation/en-us/red_hat_developer_hub/1.0/html-single/release_notes_for_red_hat_developer_hub_1.0/index#supported-plugins-in-red-hat-developer-hub-1-0[List of supported plugins in RHDH]
+* https://developers.redhat.com/rhdh/plugins[List of supported plugins in RHDH]
 * https://access.redhat.com/documentation/en-us/red_hat_developer_hub/1.0/html-single/administration_guide_for_red_hat_developer_hub/index#dynamic-plugins-matrix[Dynamic plugins support matrix^]
 * https://github.com/janus-idp/backstage-plugins/tree/main/plugins[Janus IDP plugins^]
+* https://www.redhat.com/en/blog/introducing-ansible-plug-ins-red-hat-developer-hub[Ansible plug-ins for Red Hat Developer Hub]
