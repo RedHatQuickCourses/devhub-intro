@@ -177,6 +177,81 @@ The core features like Software Catalog, Templates, TechDocs and Search are them
 <p>Some of the most important ones are listed below. There are plans to develop more plugins that integrate with the Red Hat product ecosystem.</p>
 </div>
 <div class="sect2">
+<h3 id="_ansible_plugin"><a class="anchor" href="#_ansible_plugin"></a>Ansible Plugin</h3>
+<div class="paragraph">
+<p>The Ansible Plugin enables you to learn about Ansible, create automation projects, and access opinionated workflows and tools to develop and test your automation code.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/rhdh-ansible-plugin.png" alt="rhdh ansible plugin" width="800px">
+</div>
+<div class="title">Figure 2. Landing page of Ansible plug-ins for RHDH</div>
+</div>
+<div class="paragraph">
+<p>Key features of the plugin include the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Seamless content creation</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>The solution includes Developer Hub software templates that facilitate a push-button experience for creating repositories to host Ansible Playbooks, roles and collections.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/rhdh-ansible-plugin-1.png" alt="rhdh ansible plugin 1" width="800px">
+</div>
+<div class="title">Figure 3. Embedded software templates for push-button Ansible creation experience</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Integrated pipelines</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pre-configured pipelines, deployed as part of the template repositories, help make your Ansible content consistent. Integrating ansible-lint, these pipelines automatically run upon any push to the repository, so that content adheres to best practices.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Integrations with Ansible Automation Platform</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>The platform provides links to private automation hub and automation controller, making certified, ready-to-use content more visible to help users get started quickly and run their automation.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Comprehensive learning paths</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Developer Hub offers expanded learning paths to guide users in customizing best practices and policies for automation. A dedicated section for Ansible documentation, learning paths, labs and knowledge base articles provides a one-stop shop for all Ansible-related help content.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/rhdh-ansible-plugin-2.png" alt="rhdh ansible plugin 2" width="800px">
+</div>
+<div class="title">Figure 4. Ansible-specific learning paths and labs</div>
+</div>
+</div>
+<div class="sect2">
 <h3 id="_tekton_plugin"><a class="anchor" href="#_tekton_plugin"></a>Tekton Plugin</h3>
 <div class="paragraph">
 <p>The Tekton plugin enables you to visualize the results of CI/CD pipeline runs on your Kubernetes or OpenShift clusters.
@@ -186,7 +261,7 @@ The plugin allows users to visually see high level status of all associated task
 <div class="content">
 <img src="_images/rhdh-tekton-plugin.png" alt="rhdh tekton plugin" width="800px">
 </div>
-<div class="title">Figure 2. RHDH Tekton Plugin</div>
+<div class="title">Figure 5. RHDH Tekton Plugin</div>
 </div>
 <div class="paragraph">
 <p>This plugin is similar to the pipeline view in the <strong>Developer Perspective</strong> of the OpenShift Console, and will continue to be enhanced with more features.</p>
@@ -195,7 +270,7 @@ The plugin allows users to visually see high level status of all associated task
 <div class="content">
 <img src="_images/rhdh-tekton-viz.png" alt="rhdh tekton viz" width="800px">
 </div>
-<div class="title">Figure 3. RHDH Tekton Pipeline Visualization</div>
+<div class="title">Figure 6. RHDH Tekton Pipeline Visualization</div>
 </div>
 </div>
 <div class="sect2">
@@ -207,7 +282,7 @@ The plugin allows users to visually see high level status of all associated task
 <div class="content">
 <img src="_images/rhdh-argocd-plugin.png" alt="rhdh argocd plugin" width="800px">
 </div>
-<div class="title">Figure 4. RHDH ArgoCD Plugin</div>
+<div class="title">Figure 7. RHDH ArgoCD Plugin</div>
 </div>
 <div class="paragraph">
 <p>The ArgoCD plugin can show you the high-level status of a GitOps enabled application in your Catalog.</p>
@@ -216,7 +291,7 @@ The plugin allows users to visually see high level status of all associated task
 <div class="content">
 <img src="_images/rhdh-argocd-viz.png" alt="rhdh argocd viz" width="800px">
 </div>
-<div class="title">Figure 5. RHDH ArgoCD Sync Status</div>
+<div class="title">Figure 8. RHDH ArgoCD Sync Status</div>
 </div>
 </div>
 <div class="sect2">
@@ -228,7 +303,7 @@ The plugin allows users to visually see high level status of all associated task
 <div class="content">
 <img src="_images/rhdh-quay-plugin.png" alt="rhdh quay plugin" width="800px">
 </div>
-<div class="title">Figure 6. RHDH Quay.io Plugin</div>
+<div class="title">Figure 9. RHDH Quay.io Plugin</div>
 </div>
 <div class="paragraph">
 <p>The plugin also shows any critical vulnerabilities that were discovered while scanning the container image.</p>
@@ -237,7 +312,7 @@ The plugin allows users to visually see high level status of all associated task
 <div class="content">
 <img src="_images/rhdh-quay-sec-scan.png" alt="rhdh quay sec scan" width="800px">
 </div>
-<div class="title">Figure 7. RHDH Quay.io Plugin Security Scanner</div>
+<div class="title">Figure 10. RHDH Quay.io Plugin Security Scanner</div>
 </div>
 </div>
 <div class="sect2">
@@ -262,7 +337,7 @@ The plugin allows users to visually see high level status of all associated task
 <div class="content">
 <img src="_images/rhdh-keycloak-plugin.png" alt="rhdh keycloak plugin" width="800px">
 </div>
-<div class="title">Figure 8. RHDH Keycloak Plugin</div>
+<div class="title">Figure 11. RHDH Keycloak Plugin</div>
 </div>
 <div class="paragraph">
 <p>Users and Groups from the Keycloak domain are mapped to users and groups (teams) in RHDH.</p>
@@ -271,7 +346,7 @@ The plugin allows users to visually see high level status of all associated task
 <div class="content">
 <img src="_images/rhdh-keycloak-users.png" alt="rhdh keycloak users" width="800px">
 </div>
-<div class="title">Figure 9. RHDH Keycloak Users and Groups</div>
+<div class="title">Figure 12. RHDH Keycloak Users and Groups</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -324,7 +399,7 @@ The plugin originated from the OpenShift Topology view of a project in the <stro
 <div class="content">
 <img src="_images/rhdh-topology-plugin.png" alt="rhdh topology plugin" width="800px">
 </div>
-<div class="title">Figure 10. RHDH Topology Plugin</div>
+<div class="title">Figure 13. RHDH Topology Plugin</div>
 </div>
 <div class="paragraph">
 <p>Each deployment in the topology plugin can be further inspected to visualize the number of pods, their status, services, routes, and other details.</p>
@@ -333,13 +408,13 @@ The plugin originated from the OpenShift Topology view of a project in the <stro
 <div class="content">
 <img src="_images/rhdh-topology-detail.png" alt="rhdh topology detail" width="800px">
 </div>
-<div class="title">Figure 11. RHDH Topology Plugin Pod View</div>
+<div class="title">Figure 14. RHDH Topology Plugin Pod View</div>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="_images/rhdh-topology-detail-2.png" alt="rhdh topology detail 2" width="800px">
 </div>
-<div class="title">Figure 12. RHDH Topology Plugin Resource View</div>
+<div class="title">Figure 15. RHDH Topology Plugin Resource View</div>
 </div>
 <div class="paragraph">
 <p>RHDH also provides a convenient link to the container logs to help developers troubleshoot application deployments without leaving RHDH.</p>
@@ -348,7 +423,7 @@ The plugin originated from the OpenShift Topology view of a project in the <stro
 <div class="content">
 <img src="_images/rhdh-topology-logs.png" alt="rhdh topology logs" width="800px">
 </div>
-<div class="title">Figure 13. RHDH Topology Plugin Container Logs</div>
+<div class="title">Figure 16. RHDH Topology Plugin Container Logs</div>
 </div>
 </div>
 <div class="sect2">
@@ -400,7 +475,7 @@ It makes workloads on multiple managed clusters observable to the developer.</p>
 <div class="content">
 <img src="_images/rhdh-ocm-plugin.png" alt="rhdh ocm plugin" width="800px">
 </div>
-<div class="title">Figure 14. RHDH OCM Plugin</div>
+<div class="title">Figure 17. RHDH OCM Plugin</div>
 </div>
 <div class="paragraph">
 <p>RHDH can also display the Kubernetes or OpenShift clusters that your applications are deployed on, and their status.</p>
@@ -409,7 +484,7 @@ It makes workloads on multiple managed clusters observable to the developer.</p>
 <div class="content">
 <img src="_images/rhdh-clusters-plugin.png" alt="rhdh clusters plugin" width="800px">
 </div>
-<div class="title">Figure 15. RHDH OpenShift/Kubernetes Cluster Plugin</div>
+<div class="title">Figure 18. RHDH OpenShift/Kubernetes Cluster Plugin</div>
 </div>
 </div>
 </div>
@@ -444,13 +519,16 @@ Your browser does not support the video tag.
 <p><a href="https://backstage.io/docs/plugins/create-a-plugin" target="_blank" rel="noopener">Create a Backstage plugin</a></p>
 </li>
 <li>
-<p><a href="https://access.redhat.com/documentation/en-us/red_hat_developer_hub/1.0/html-single/release_notes_for_red_hat_developer_hub_1.0/index#supported-plugins-in-red-hat-developer-hub-1-0">List of supported plugins in RHDH</a></p>
+<p><a href="https://developers.redhat.com/rhdh/plugins">List of supported plugins in RHDH</a></p>
 </li>
 <li>
 <p><a href="https://access.redhat.com/documentation/en-us/red_hat_developer_hub/1.0/html-single/administration_guide_for_red_hat_developer_hub/index#dynamic-plugins-matrix" target="_blank" rel="noopener">Dynamic plugins support matrix</a></p>
 </li>
 <li>
 <p><a href="https://github.com/janus-idp/backstage-plugins/tree/main/plugins" target="_blank" rel="noopener">Janus IDP plugins</a></p>
+</li>
+<li>
+<p><a href="https://www.redhat.com/en/blog/introducing-ansible-plug-ins-red-hat-developer-hub">Ansible plug-ins for Red Hat Developer Hub</a></p>
 </li>
 </ul>
 </div>
