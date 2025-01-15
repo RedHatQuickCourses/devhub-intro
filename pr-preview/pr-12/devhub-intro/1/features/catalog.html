@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Software Catalog :: Introduction to Red Hat Developer Hub</title>
+    <link rel="prev" href="index.html">
+    <link rel="next" href="gpt.html">
+    <meta name="generator" content="Antora 3.1.3">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../../..">Introduction to Red Hat Developer Hub</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/devhub-intro/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header><div class="body">
+<div class="nav-container" data-component="devhub-intro" data-version="1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Introduction to Red Hat Developer Hub</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../introduction/index.html">Introduction to Red Hat Developer Hub</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduction/intro.html">Introduction</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduction/arch.html">Architecture</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="index.html">Core Features of Red Hat Developer Hub</a>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="catalog.html">Software Catalog</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="gpt.html">Software Templates</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="docs.html">TechDocs and Search</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="plugins.html">Plugins</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Introduction to Red Hat Developer Hub</span>
+    <span class="version">1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Introduction to Red Hat Developer Hub</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Introduction to Red Hat Developer Hub</a></li>
+    <li><a href="index.html">Core Features of Red Hat Developer Hub</a></li>
+    <li><a href="catalog.html">Software Catalog</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Software Catalog</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <strong>Software Catalog</strong> as its name implies, is a <em>catalog</em> of software components. It is designed to replace ad-hoc, informal systems that do not scale to handle the sprawl of modern cloud-native application ecosystems.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_why_do_you_need_a_software_catalog"><a class="anchor" href="#_why_do_you_need_a_software_catalog"></a>Why do you need a Software Catalog?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>While popular practices like splitting applications into microservices and reusable APIs, and software ownership by smaller teams of developers (<em>"two pizza teams"</em>) has improved the efficiency of organizations, it has made it difficult to <strong>discover</strong> and <strong>reuse</strong> software components at scale.</p>
+</div>
+<div class="paragraph">
+<p>Imagine a large organization with hundreds of developers maintaining hundreds or thousands of services. Maintaining a centralized catalog manually using spreadsheets, wikis, and internal or SharePoint portals is not going to scale.</p>
+</div>
+<div class="paragraph">
+<p>The RHDH Software Catalog is designed to address this need. It keeps track of all software components in your organization - this includes APIs, software libraries, machine learning models, CI/CD pipelines, and more. Essentially, anything that can be shared and reused outside the team that created the component. It improves <strong>discoverability</strong> by exposing the catalog as an API that can then be consumed by anyone within the organization. The catalog can also be consumed by RHDH plugins that can then extend the functionality of the IDP by incorporating it into custom workflows and help automate many operational tasks.</p>
+</div>
+<div class="paragraph">
+<p>Maintaining a software catalog massively simplifies the <strong>Onboarding Process</strong> for new developers joining the organization, or a new project. The catalog lets you discover all registered components in the catalog, as well as explore the APIs, the teams that own and operate them, issues, CI/CD pipeline status, and technical documentation in a single easily accessible place. The component information is kept up to date by the respective teams (in their corresponding Git repositories), and RHDH periodically pulls the latest metadata to maintain the information in near real-time.</p>
+</div>
+<div class="paragraph">
+<p>RHDH comes with a set of pre-built plugins that interact with the components in the catalog. For example, CI/CD pipelines, container images, issue tracking, Kubernetes cluster information, and the deployments can all be viewed in RHDH without requiring developers to access these different tools using different applications, each with their own authentication and workflows.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+These plugins are not meant to replace the tooling, but to <strong>complement</strong> it, by reducing the <em>cognitive load</em> and preventing <em>context switching</em> between different tools,  while letting the developer focus on building, deploying, releasing, and maintaining software. The plugins can be configured to display limited, but <strong>useful</strong> information at a first glance. Links can be embedded in the plugin to navigate to the external tool or application in case the developer needs to investigate deeper.
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/rhdh-sw-catalog.png" alt="rhdh sw catalog" width="800px">
+</div>
+<div class="title">Figure 1. Software Catalog in RHDH</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_populating_the_software_catalog"><a class="anchor" href="#_populating_the_software_catalog"></a>Populating the Software Catalog</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Adding items to the catalog is done using YAML files, typically stored in source control systems like Git. These YAML files live alongside and in the same source code repository as the source code of the software components. There are four ways to add components to the Software Catalog:</p>
+</div>
+<div class="sect2">
+<h3 id="_manual_component_registration"><a class="anchor" href="#_manual_component_registration"></a>Manual Component Registration</h3>
+<div class="paragraph">
+<p>To register an already existing component that is created outside RHDH, click on <strong>Create</strong> in the left sidebar navigation of RHDH, and then click <strong>REGISTER NEW COMPONENT</strong>.</p>
+</div>
+<div class="paragraph">
+<p>In addition to manually registering components, you can also register components through static configuration, by passing RHDH a YAML configuration file (<code>catalog-info.yml</code>) with the location and details about the component.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/rhdh-new-component.png" alt="rhdh new component" width="800px">
+</div>
+<div class="title">Figure 2. Manual Registration of Components</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_create_components_from_software_templates"><a class="anchor" href="#_create_components_from_software_templates"></a>Create Components from Software Templates</h3>
+<div class="paragraph">
+<p>A more flexible approach is to create components using RHDH <strong>Software Templates</strong> (formerly called <strong> Golden Path Templates</strong>), which automatically add the components to the catalog. Using this approach, you can register multiple related components of an application at the same time with the Software Catalog. Templates typically also rely on the YAML definition (<code>catalog-info.yaml</code>) being in place, when registering components into the catalog.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/rhdh-new-gpt.png" alt="rhdh new gpt" width="800px">
+</div>
+<div class="title">Figure 3. Create Components using Software Templates</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Software Templates are covered in more detail in the next section.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_dynamic_discovery_of_components"><a class="anchor" href="#_dynamic_discovery_of_components"></a>Dynamic Discovery of Components</h3>
+<div class="paragraph">
+<p>RHDH can dynamically discover catalog entities from YAML configuration files stored in GitHub or GitLab. RHDH will parse the YAML files and register entities automatically. This can be useful as an alternative to statically adding components to the catalog. This is useful for maintaining sets of related components in Git repositories and mass importing entities into RHDH in an automated manner.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_third_party_integration"><a class="anchor" href="#_third_party_integration"></a>Third-party Integration</h3>
+<div class="paragraph">
+<p>RHDH can import software components from external systems using its TypeScript API. This would require you to extend the TypeScript API of RHDH and is outside the scope of this course.</p>
+</div>
+<div class="paragraph">
+<p>The first three methods are the most common way to populate the catalog, with the third option being reserved for special scenarios where you already have an existing system that manages software components, and you want to integrate it with RHDH.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_viewing_the_software_catalog"><a class="anchor" href="#_viewing_the_software_catalog"></a>Viewing the Software Catalog</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>By default, the software catalog shows components owned by the team of the logged-in user. But you can also switch the search filters and see all the components in your organization&#8217;s software catalog. The RHDH web UI provides powerful full-text search and filtering capability to search through thousands of components.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/rhdh-search-filter.png" alt="rhdh search filter" width="800px">
+</div>
+<div class="title">Figure 4. Searching and Filtering the Software Catalog</div>
+</div>
+<div class="paragraph">
+<p>For easy and quick access to components you visit frequently, RHDH supports <strong>starring</strong> (tag as favorite) of components.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/rhdh-starred.png" alt="rhdh starred" width="800px">
+</div>
+<div class="title">Figure 5. Starred Entities</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_references"><a class="anchor" href="#_references"></a>References</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://backstage.io/docs/features/software-catalog" target="_blank" rel="noopener">Backstage Software Catalog</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="index.html">Core Features of Red Hat Developer Hub</a></span>
+  <span class="next"><a href="gpt.html">Software Templates</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
