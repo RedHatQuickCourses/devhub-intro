@@ -6,11 +6,11 @@ While technologies, processes and tools like Agile, DevOps, cloud computing and 
 
 Over the last decade, the concept of _Developer Experience_ has gained traction in the industry. There are a few things an organization can do to improve the developer experience by letting them focus on just writing code as much as possible to solve business problems:
 
-* Reduce the cognitive load on developers by abstracting away infrastructure and operational concerns 
-* Provide more self-service capabilities to kick off projects quickly without manually assembling all the components
-* Improve discovery of tools, APIs, libraries and documentation and promote reuse
-* Provide a "single pane of glass" dashboard that provides real-time visualization and details about projects, workflows, CI/CD pipelines, and their deployment status
-* Reduce reliance on operations teams for repetitive day to day tasks ("ticketing hell"), and automate workflows as much as possible
+* Reduce the cognitive load on developers by abstracting away infrastructure and operational concerns. 
+* Provide more self-service capabilities to kick off projects quickly without manually assembling all the components.
+* Improve discovery of tools, APIs, libraries, and documentation and promote reuse.
+* Provide a "single pane of glass" dashboard that provides real-time visualization and details about projects, workflows, CI/CD pipelines, and their deployment status.
+* Reduce reliance on operations teams for repetitive day to day tasks ("ticketing hell"), and automate workflows as much as possible.
 
 Building all these features internally, in an ad-hoc basis, takes a lot of time and effort. This is the rationale behind the concept of an **Internal Developer Platform**.
 
@@ -20,10 +20,10 @@ Red Hat Developer Hub is an **Internal Developer Platform**.
 
 [quote,The IDP community, https://internaldeveloperplatform.org/what-is-an-internal-developer-platform]
 ____
-An Internal Developer Platform (IDP) is built by a platform team to build golden paths and enable developer self-service. An IDP consists of many different technologies and tools, glued together in a way that lowers cognitive load on developers without abstracting away context and underlying technologies. Following best practices, platform teams treat their platform as a product and build it based on user research, maintain and continuously improve it.
+An Internal Developer Platform (IDP) is built by a platform team to build golden paths and enable developer self-service. An IDP consists of many different technologies and tools, glued together in a way that lowers cognitive load on developers without abstracting away context and underlying technologies. Following best practices, platform teams treat their platform as a product and build it based on user research, maintaining and continuously improving it.
 ____
 
-A dedicated **platform team**, specializing in infrastructure and operations, creates and maintains the IDP. Platform teams focus on standardization, infrastructure abstraction, workflow automation and configure the IDP to automate recurring or repetitive tasks, such as provisioning resources or development/testing environments for developers. 
+A dedicated **platform team**, specializing in infrastructure and operations, creates and maintains the IDP. Platform teams focus on standardization, infrastructure abstraction, workflow automation, and configure the IDP to automate recurring or repetitive tasks, such as provisioning resources or development/testing environments for developers. 
 
 From the developer point of view, IDPs integrate into existing software development lifecycles (SDLC) workflows in an organization, which usually revolves around a distributed version control system like Git, and the IDP further augments it with automation. The developer has minimal to zero reliance on operations teams for rolling out software to production. They can request resources, spin up fully provisioned environments, deploy, rollback, and troubleshoot applications independently.
 
@@ -35,9 +35,9 @@ The page at https://platformengineering.org/blog/what-is-platform-engineering cr
 
 == Why do you need an Internal Developer Platform (IDP)?
 
-The page at https://internaldeveloperplatform.org/why-build-an-internal-developer-platform provides a detailed explanation for why you need an IDP.
+The page at https://internaldeveloperplatform.org/why-build-an-internal-developer-platform provides a detailed explanation of why you need an IDP.
 
-Additionally, below is a short 6 minute introduction to Backstage and the rationale for building an Internal Developer Platform (IDP).
+Additionally, below is a short 6-minute introduction to Backstage and the rationale for building an Internal Developer Platform (IDP).
 
 video::n1IrNe5MmZg[youtube,title=Backstage.io - An Open Source Portal for Taming Developer Chaos,width=640,height=480]
 
@@ -47,11 +47,11 @@ image::backstage-janus-rhdh-flow.png[width=800px]
 
 === Backstage
 
-**Backstage** is an open-source platform for building developer portals created by Spotify and donated to the Cloud Native Computing Foundation (CNCF). Rather than a product that is ready to use by developers, Backstage provides the core features for building developer portals, and has an extensive list of plugins supporting integration with platforms, runtimes and external APIs. Platform engineering teams take the base Backstage platform, and then extend and customize it for their developers' needs. Refer to the Backstage website for a full list of plugins.
+**Backstage** is an open-source platform for building developer portals created by Spotify and donated to the Cloud Native Computing Foundation (CNCF). Rather than a product that is ready to use by developers, Backstage provides the core features for building developer portals, and has an extensive list of plugins supporting integration with platforms, runtimes, and external APIs. Platform engineering teams take the base Backstage platform, and then extend and customize it for their developers' needs. Refer to the Backstage website for a full list of plugins.
 
 === Project Janus
 
-**Project Janus** is a Red Hat-sponsored open source community for building IDPs and plugins using Backstage.
+**Project Janus** is a Red Hat-sponsored open-source community for building IDPs and plugins using Backstage.
 It is the “mid-stream” for the Red Hat Developer Hub product, sitting between Backstage upstream and the supported Red Hat product offering which is focused on four areas:
 
 * Installation on the Red Hat OpenShift Container Platform
@@ -65,7 +65,7 @@ video::Ck7r5DpEwj0[youtube,title=GitOps Guide to the Galaxy - What's Janus IDP?,
 
 === Red Hat Developer Hub
 
-**Red Hat Developer Hub** is the enterprise product that Red Hat builds and supports in production. It is based on the mid-stream Janus project (Janus is based on the upstream Backstage project), and provides an integrated developer platform for customers. Several important plugins that integrate with other Red Hat Enterprise products are bundled in the product. The product is built for deployment on OpenShift Container Platform, and Red Hat builds, integrates and tests all the container images on Red Hat Enterprise Linux (RHEL) Universal Base Images (UBI). These UBI based container images are built for improved security and stability, and are constantly tested and updated to address security vulnerabilities.
+**Red Hat Developer Hub** is the enterprise product that Red Hat builds and supports in production. It is based on the mid-stream Janus project (Janus is based on the upstream Backstage project), and provides an integrated developer platform for customers. Several important plugins that integrate with other Red Hat Enterprise products are bundled in the product. The product is built for deployment on the OpenShift Container Platform, and Red Hat builds, integrates, and tests all the container images on Red Hat Enterprise Linux (RHEL) Universal Base Images (UBI). These UBI-based container images are built for improved security and stability, and are constantly tested and updated to address security vulnerabilities.
 
 image::rhdh-big-picture.png[width=800px]
 
@@ -73,11 +73,11 @@ Benefits of Red Hat Developer Hub include:
 
 * Increased developer productivity: Increases productivity by eliminating common organizational challenges, enabling seamless collaboration, and providing clear guidelines for creating, developing, and deploying applications.
 
-* Unified self-service dashboard: Provides development teams with a unified dashboard covering various aspects such as Git, CI/CD, Secure Software Supply Chain, OpenShift/Kubernetes clusters, JIRA, GitLab and GitHub issues, monitoring, API, documentation, and more. These features are facilitated by over 150 plugins. All curated by a platform engineering team, aligning with the company best practices.
+* Unified self-service dashboard: Provides development teams with a unified dashboard covering various aspects such as Git, CI/CD, Secure Software Supply Chain, OpenShift/Kubernetes clusters, JIRA, GitLab and GitHub issues, monitoring, API, documentation, and more. These features are facilitated by over 150 plugins. All are curated by a platform engineering team, aligning with the company's best practices.
 
 * Best practices through software templates: Automates organizational best practices by encoding common tasks such as creating new applications, running Ansible jobs, and establishing CI/CD pipelines for production deployment in Git.
 
-* Scalable technical documentation: Code and documentation resides in the same repository, eliminating dependencies on proprietary documentation systems.
+* Scalable technical documentation: Code and documentation reside in the same repository, eliminating dependencies on proprietary documentation systems.
 
 * Efficient onboarding for new developers and discoverability: New developers quickly adapt and become productive within a short timeframe.
 
@@ -85,7 +85,7 @@ Benefits of Red Hat Developer Hub include:
 
 == Demonstration: The Parts of RHDH
 
-Watch this short 5 minute demonstration about the parts of RHDH that are provided by default in every instance of RHDH.
+Watch this short 5-minute demonstration about the parts of RHDH that are provided by default in every instance of RHDH.
 
 video::rhdh-parts.mp4[width=800,height=480]
 
@@ -93,7 +93,7 @@ video::rhdh-parts.mp4[width=800,height=480]
 
 * https://developers.redhat.com/rhdh[Red Hat Developer Hub^]
 * https://internaldeveloperplatform.org/what-is-an-internal-developer-platform[What is an Internal Developer Platform (IDP)?^]
-* https://internaldeveloperplatform.org/why-build-an-internal-developer-platform[Why build and use an Internal Developer Platform^]
+* https://internaldeveloperplatform.org/why-build-an-internal-developer-platform[Why build and use an Internal Developer Platform?^]
 * https://backstage.io[Backstage Open Source IDP^]
 * https://janus-idp.io[Project Janus^]
 * https://platformengineering.org/blog/what-is-platform-engineering[What is Platform Engineering^]

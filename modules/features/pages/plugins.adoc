@@ -6,12 +6,12 @@ They were designed to add specific features, integrations, or customizations on 
 Plugins can provide new pages in the developer portal, new components, new APIs, new services, or even complete workflows within RHDH.
 Plugins can be of three different types:
 
-Frontend Plugins:: A static front end user interface that is written in React and TypeScript that integrates with internal or external APIs to render data in the IDP. For example, the `Tech Radar` plugin.
+Frontend Plugins:: A static front-end user interface that is written in React and TypeScript that integrates with internal or external APIs to render data in the IDP. For example, the `Tech Radar` plugin.
 Backend Plugins:: A backend API that is written in TypeScript that exposes an API to frontend plugins. For example, the `Architecture Decision Record (ADR) backend` plugin.
 Frontend + Backend plugins:: A mix of frontend and backend TypeScript code that provides a certain feature of functionality. For example, the `ArgoCD` and `SonarQube` plugins.
 
 Red Hat Developer Hub (RHDH) has a very flexible and extensive set of plugins that provide most of the functionality in the product.
-The core features like Software Catalog, Templates, TechDocs and Search are themselves built as plugins in RHDH.
+The core features like Software Catalog, Templates, TechDocs, and Search are themselves built as plugins in RHDH.
 
 There are hundreds of https://backstage.io/plugins[plugins^] created by the Backstage community that you can use to customize your instance of RHDH, and adapt the IDP to your needs.
 
@@ -21,7 +21,7 @@ image::rhdh-plugins.png[title=RHDH Plugins,width=800px]
 
 Red Hat actively participates in the thriving Backstage community by developing and supporting a number of useful plugins that are pre-integrated into RHDH by default.
 
-RHDH suppports the concept of *dynamic plugins*, which enables you to load plugins into your RHDH instance without having to recompile your code, or rebuild the container.
+RHDH supports the concept of *dynamic plugins*, which enables you to load plugins into your RHDH instance without having to recompile your code, or rebuild the container.
 
 RHDH is pre-loaded with a selection of dynamic plugins. Most of these dynamic plugins are disabled by default due to the need for mandatory configuration.
 
@@ -36,25 +36,25 @@ image::rhdh-ansible-plugin.png[title=Landing page of Ansible plug-ins for RHDH,w
 Key features of the plugin include the following:
 
 * **Seamless content creation**
-** The solution includes Developer Hub software templates that facilitate a push-button experience for creating repositories to host Ansible Playbooks, roles and collections.
+** The solution includes Developer Hub software templates that facilitate a push-button experience for creating repositories to host Ansible Playbooks, roles, and collections.
 
 image::rhdh-ansible-plugin-1.png[title=Embedded software templates for push-button Ansible creation experience,width=800px]
 
 * **Integrated pipelines**
 ** Pre-configured pipelines, deployed as part of the template repositories, help make your Ansible content consistent. Integrating ansible-lint, these pipelines automatically run upon any push to the repository, so that content adheres to best practices.
 
-* **Integrations with Ansible Automation Platform**
-** The platform provides links to private automation hub and automation controller, making certified, ready-to-use content more visible to help users get started quickly and run their automation.
+* **Integrations with the Ansible Automation Platform**
+** The platform provides links to a private automation hub and automation controller, making certified, ready-to-use content more visible to help users get started quickly and run their automation.
 
 * **Comprehensive learning paths**
-** Developer Hub offers expanded learning paths to guide users in customizing best practices and policies for automation. A dedicated section for Ansible documentation, learning paths, labs and knowledge base articles provides a one-stop shop for all Ansible-related help content.
+** Developer Hub offers expanded learning paths to guide users in customizing best practices and policies for automation. A dedicated section for Ansible documentation, learning paths, labs, and knowledge base articles provides a one-stop shop for all Ansible-related help content.
 
 image::rhdh-ansible-plugin-2.png[title=Ansible-specific learning paths and labs,width=800px]
 
 === Tekton Plugin
 
 The Tekton plugin enables you to visualize the results of CI/CD pipeline runs on your Kubernetes or OpenShift clusters.
-The plugin allows users to visually see high level status of all associated tasks in the pipeline for their applications.
+The plugin allows users to visually see the high-level status of all associated tasks in the pipeline for their applications.
 
 image::rhdh-tekton-plugin.png[title=RHDH Tekton Plugin,width=800px]
 
@@ -64,11 +64,11 @@ image::rhdh-tekton-viz.png[title=RHDH Tekton Pipeline Visualization,width=800px]
 
 === ArgoCD Plugin
 
-This plugin allows you to visualize the ArgoCD sync status, deployment history, and health status for your GitOps enabled applications.
+This plugin allows you to visualize the ArgoCD sync status, deployment history, and health status for your GitOps-enabled applications.
 
 image::rhdh-argocd-plugin.png[title=RHDH ArgoCD Plugin,width=800px]
 
-The ArgoCD plugin can show you the high-level status of a GitOps enabled application in your Catalog.
+The ArgoCD plugin can show you the high-level status of a GitOps-enabled application in your Catalog.
 
 image::rhdh-argocd-viz.png[title=RHDH ArgoCD Sync Status,width=800px]
 
@@ -84,7 +84,7 @@ image::rhdh-quay-sec-scan.png[title=RHDH Quay.io Plugin Security Scanner,width=8
 
 === Keycloak Plugin
 
-The Keycloak plugin allows RHDH import users and groups from Keycloak realms. It maps the Keycloak user and groups entities to corresponding users and groups (teams) in RHDH. 
+The Keycloak plugin allows RHDH to import users and groups from Keycloak realms. It maps the Keycloak user and groups entities to corresponding users and groups (teams) in RHDH. 
 
 The Keycloak backend plugin has the following capabilities:
 
@@ -106,9 +106,9 @@ The plugin originated from the OpenShift Topology view of a project in the **Dev
 
 It has the following features:
 
-* Consistent visualization of resources across Kubernetes clusters. Simplifies the process of visualizing workloads of your applications and services
-* Read only access to related services of your application
-* Visualize real time status of your workloads
+* Consistent visualization of resources across Kubernetes clusters. Simplifies the process of visualizing the workloads of your applications and services
+* Read-only access to related services of your application
+* Visualize real-time status of your workloads
 * View related resources for your applications in the RHDH Software Catalog
 * View debugging logs for your containers
 * Eliminates the stress and cognitive load of accessing OpenShift or Kubernetes clusters directly via the Administrator console.
@@ -145,13 +145,13 @@ The OCM plugin has the following capabilities:
 
 image::rhdh-ocm-plugin.png[title=RHDH OCM Plugin,width=800px]
 
-RHDH can also display the Kubernetes or OpenShift clusters that your applications are deployed on, and their status.
+RHDH can also display the Kubernetes or OpenShift clusters that your applications are deployed on and their status.
 
 image::rhdh-clusters-plugin.png[title=RHDH OpenShift/Kubernetes Cluster Plugin,width=800px]
 
 == Demonstration: RHDH Plugins
 
-Watch this short 5 minute demonstration about the plugins in RHDH.
+Watch this short 5-minute demonstration about the plugins in RHDH.
 
 video::plugin.mp4[width=800,height=480]
 

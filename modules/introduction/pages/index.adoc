@@ -5,5 +5,5 @@ You will also learn about the architecture and components of the product.
 
 == Goals
 
-* Identify the main features of Red Hat Developer Hub
-* Describe the architecture and components of Red Hat Developer Hub
+* Identify the main features of the Red Hat Developer Hub
+* Describe the architecture and components of the Red Hat Developer Hub

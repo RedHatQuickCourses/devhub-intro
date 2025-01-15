@@ -4,7 +4,7 @@
 
 Templates typically include recommended configurations for various aspects of the application or service, such as application metadata, linters and static analysis tools, documentation, CI/CD pipelines, testing frameworks, security scanning tools and libraries, and many more features. Software Templates enable true self-service for developers. They ensure consistency and adherence to organizational standards across different services or projects.
 
-It is important to understand that templates should not be seen as yet another process pushed down to developers from a centralized authority. They are a way to encapsulate the various different tools, processes and utilities used in the organization, and compose them together into a single tool capable of quickly scaffolding new projects, products and services of any kind. They are not meant to **replace** your already existing automation tools, but to **complement** them.
+It is important to understand that templates should not be seen as yet another process pushed down to developers from a centralized authority. They are a way to encapsulate the various tools, processes and utilities used in the organization, and compose them together into a single tool capable of quickly scaffolding new projects, products and services of any kind. They are not meant to **replace** your already existing automation tools, but to **complement** them.
 
 == Creating Software Templates
 
@@ -37,7 +37,7 @@ spec:
 ...
 ```
 
-The template YAML file describes the metadata, the source code repositories where stubbed code and configuration is stored, and a series of **steps** that describes the things that RHDH will perform to create a fully functional and deployable application or service from the template. 
+The template YAML file describes the metadata, the source code repositories where stubbed code and configuration are stored, and a series of **steps** that describe the things that RHDH will perform to create a fully functional and deployable application or service from the template. 
 
 These YAML files are then parsed and displayed in the Software Catalog screen of RHDH.
 
@@ -82,7 +82,7 @@ steps:
 
 === Dynamic Discovery using GitHub or GitLab
 
-RHDH has a **discovery provider** for discovering catalog entities within a GitHub or GitLab organization. The provider will crawl the GitHub or GitLab organization and register entities matching a certain path. This can be useful as an alternative to statically adding templates to the catalog. This is useful for maintaining sets of related templates in Git repositories and mass import templates into new instances of RHDH in an automated manner.
+RHDH has a **discovery provider** for discovering catalog entities within a GitHub or GitLab organization. The provider will crawl the GitHub or GitLab organization and register entities matching a certain path. This can be useful as an alternative to statically adding templates to the catalog. This is useful for maintaining sets of related templates in Git repositories and mass importing templates into new instances of RHDH in an automated manner.
 
 For example, you can auto-discover templates in your GitLab organization by using a YAML snippet like below:
 
@@ -106,13 +106,13 @@ catalog:
 
 === Third-party Integration using API
 
-You can also import templates into RHDH using its native TypeScript APIs. This is useful in scenarios where you want to integrate with third-party systems, but it would require you to extend the RHDH TypeScript API. This method is more complex than the YAML configuration methods, and is not recommended unless you have a specific need outlined above.
+You can also import templates into RHDH using its native TypeScript APIs. This is useful in scenarios where you want to integrate with third-party systems, but it would require you to extend the RHDH TypeScript API. This method is more complex than the YAML configuration methods and is not recommended unless you have a specific need outlined above.
 
 == Using Software Templates
 
 Developers see a list of Templates in the Software Catalog screen of RHDH. The developer chooses a template from which to instantiate the application or service, and RHDH will ask him a series of questions based on the template configuration.
 
-For example, assume you want to create a Quarkus based REST API using a template. You will be prompted for the name of the application, some basic metadata about the application (Maven coordinates and more), details about the container image, and the Git repository where the new application source code will be scaffolded.
+For example, assume you want to create a Quarkus-based REST API using a template. You will be prompted for the name of the application, some basic metadata about the application (Maven coordinates and more), details about the container image, and the Git repository where the new application source code will be scaffolded.
 
 image::rhdh-new-comp-gpt.png[title=Step1: Create new component from GPT,width=800px]
 
@@ -122,7 +122,7 @@ image::rhdh-new-comp-gpt-3.png[title=Step 3: Provide Git repository details,widt
 
 == Demonstration: RHDH Software Templates
 
-Watch this short 5 minute demonstration about the Software Templates in RHDH.
+Watch this short 5-minute demonstration about the Software Templates in RHDH.
 
 video::gpt.mp4[width=800,height=480]
 
