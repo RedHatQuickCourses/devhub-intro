@@ -15,5 +15,5 @@ The **"HOW"** (detailed configuration and integration of plugins), is covered in
 
 The overall objectives of this course include:
 
-* Describe the architecture and features of Red Hat Developer Hub
-* Explore the core features included by default in Red Hat Developer Hub
+* Describe the architecture and features of the Red Hat Developer Hub
+* Explore the core features included by default in the Red Hat Developer Hub

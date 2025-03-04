@@ -2,7 +2,7 @@
 
 image::rhdh-core-features.png[width=800px]
 
-This chapter provides a basic introduction to the default features that come with Red Hat Developer Hub. You will learn about the following features:
+This chapter provides a basic introduction to the default features that come with the Red Hat Developer Hub. You will learn about the following features:
 
 * Software Catalog
 * Software Templates
